@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13fe1cfa8b59d2a4f91aedc24fc8ad15, type: 3}
+  m_Name: PUnitMoveToRange
+  m_EditorClassIdentifier: 
+  castAbilityOnGround: {fileID: 11400000, guid: d22ed9b245969734db0e63dc4dec6342,
+    type: 2}
+  transitionToGuard: {fileID: 11400000, guid: 46d840b53a31b7247bdc2498e0c0f9f1, type: 2}
