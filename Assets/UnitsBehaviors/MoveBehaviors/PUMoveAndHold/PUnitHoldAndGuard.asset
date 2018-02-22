@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ab78ef21c912844ad63998c6cd800c, type: 3}
+  m_Name: PUnitHoldAndGuard
+  m_EditorClassIdentifier: 
+  move: {fileID: 11400000, guid: ceb192cbceb605342b2142c2b57f08c2, type: 2}
+  castAttack: {fileID: 11400000, guid: 0b251cf15ca9f2940beb99b5d46569a2, type: 2}
