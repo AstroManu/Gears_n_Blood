@@ -12,6 +12,7 @@ public class PUEngageTarget : UnitMoveBehavior {
 
 	public override void InitializeBehavior (Unit unit)
 	{
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 

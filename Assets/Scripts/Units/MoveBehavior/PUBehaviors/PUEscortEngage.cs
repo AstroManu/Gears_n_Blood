@@ -17,6 +17,7 @@ public class PUEscortEngage : UnitMoveBehavior {
 	public override void InitializeBehavior (Unit unit)
 	{
 		unit.SlowUpdate ();
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 
@@ -49,6 +50,7 @@ public class PUEscortEngage : UnitMoveBehavior {
 		if (targetDistance > unit.unitPreset.attack.maxCastRange)
 		{
 			unit.agent.SetDestination (unit.targetUnit.transform.position);
+			unit.sC.faceDirection (unit.sC.moveRight);
 			return;
 		}
 

@@ -15,7 +15,7 @@ public class Unit : MonoBehaviour {
 	//References to unit components
 	[HideInInspector] public HealthManager healthManager;
 	[HideInInspector] public NavMeshAgent agent;
-	[HideInInspector] public SpriteRenderer spriteRenderer;
+	[HideInInspector] public SpriteController sC;
 	[HideInInspector] public SphereCollider triggerCollider;
 
 	//References to unit controls
@@ -27,6 +27,7 @@ public class Unit : MonoBehaviour {
 
 	//References to attacks
 	public Unit targetUnit;
+	[HideInInspector] public float castEnd = 0f;
 	[HideInInspector] public float nextAttack = 0f;
 	[HideInInspector] public float nextAbility = 0f;
 
@@ -68,7 +69,7 @@ public class Unit : MonoBehaviour {
 	public void DestroyUnit ()
 	{
 		Destroy (gameObject);
-		Destroy (spriteRenderer.transform.parent.gameObject);
+		sC.InitializeDeath (unitPreset.spriteDeathDelay);
 	}
 
 	//Look for a target

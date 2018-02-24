@@ -13,6 +13,7 @@ public class PUHoldAndGuard : UnitMoveBehavior {
 	public override void InitializeBehavior (Unit unit)
 	{
 		unit.agent.SetDestination (unit.worldTarget);
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 

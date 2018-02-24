@@ -11,6 +11,7 @@ public class PUStayAndGuard : UnitMoveBehavior {
 	public override void InitializeBehavior (Unit unit)
 	{
 		unit.agent.SetDestination (unit.worldTarget);
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 
@@ -21,6 +22,7 @@ public class PUStayAndGuard : UnitMoveBehavior {
 		if ((Mathf.Pow (distanceVector.x, 2f) + Mathf.Pow (distanceVector.z, 2f)) > Mathf.Pow (unit.unitPreset.aggroRange, 2f))
 		{
 			unit.agent.SetDestination (unit.worldTarget);
+			unit.sC.faceDirection (unit.sC.moveRight);
 			return;
 		}
 

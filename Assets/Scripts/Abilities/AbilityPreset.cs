@@ -7,6 +7,7 @@ public abstract class AbilityPreset : ScriptableObject {
 	public float minCastRange;
 	public float maxCastRange;
 	public float cooldownDuration;
+	public float castDuration;
 
 	public abstract void AbilityCast (Unit caster, Vector3 targetLocation, Unit targetUnit);
 

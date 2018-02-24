@@ -15,6 +15,7 @@ public class PUGuardAndEngage : UnitMoveBehavior {
 	public override void InitializeBehavior (Unit unit)
 	{
 		unit.SlowUpdate ();
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 
@@ -47,6 +48,7 @@ public class PUGuardAndEngage : UnitMoveBehavior {
 		if (targetDistance > unit.unitPreset.attack.maxCastRange)
 		{
 			unit.agent.SetDestination (unit.targetUnit.transform.position);
+			unit.sC.faceDirection (unit.sC.moveRight);
 			return;
 		}
 

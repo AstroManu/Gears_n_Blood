@@ -11,12 +11,14 @@ public class PUFollow : UnitMoveBehavior {
 	public override void InitializeBehavior (Unit unit)
 	{
 		unit.targetUnit = null;
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 
 	public override void UnitBehavior (Unit unit)
 	{
 		unit.agent.SetDestination (unit.followPosition.position);
+		unit.sC.faceDirection (unit.sC.moveRight);
 
 		if (unit.agent.remainingDistance <= unit.agent.stoppingDistance && !unit.agent.pathPending)
 		{

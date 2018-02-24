@@ -31,6 +31,5 @@ MonoBehaviour:
   ability: {fileID: 11400000, guid: fef534aa834fcb5448d9c6be233f2680, type: 2}
   hitAreaCenter: {x: 0, y: 1, z: 1}
   hitAreaRadius: 0.5
-  spriteOffset: {x: 0, y: 1, z: 0.6}
-  sergentSprite: {fileID: 21300014, guid: eb2168ca8e87943f2abd214980e72081, type: 3}
-  minionSprite: {fileID: 21300014, guid: eb2168ca8e87943f2abd214980e72081, type: 3}
+  spritePrefab: {fileID: 1325957962458012, guid: 61a4984fef7ae1642987ea0e3068eb9c,
+    type: 2}

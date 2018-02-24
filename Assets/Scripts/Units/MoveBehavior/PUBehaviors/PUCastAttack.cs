@@ -10,17 +10,23 @@ public class PUCastAttack : UnitMoveBehavior {
 
 	public override void InitializeBehavior (Unit unit)
 	{
+		unit.sC.AnimAttack ();
 		unit.moveBehavior = this;
-	}
-
-	public override void UnitBehavior (Unit unit)
-	{
 		if (unit.targetUnit != null)
 		{
 			unit.unitPreset.attack.AbilityCast (unit, unit.targetUnit.transform.position, unit.targetUnit);
 			unit.nextAttack = Time.time + unit.unitPreset.attack.cooldownDuration;
+			unit.castEnd = Time.time + unit.unitPreset.attack.castDuration;
+			unit.sC.faceDirection (unit.transform.position.x <= unit.targetUnit.transform.position.x);
 		}
-		returnTo.InitializeBehavior (unit);
+	}
+
+	public override void UnitBehavior (Unit unit)
+	{
+		if (Time.time >= unit.castEnd)
+		{
+			returnTo.InitializeBehavior (unit);
+		}
 	}
 
 }

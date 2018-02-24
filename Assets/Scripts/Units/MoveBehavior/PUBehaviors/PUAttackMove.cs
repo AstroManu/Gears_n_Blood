@@ -14,6 +14,7 @@ public class PUAttackMove : UnitMoveBehavior {
 		unit.SlowUpdate ();
 		unit.targetUnit = null;
 		unit.agent.SetDestination (unit.worldTarget);
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 
@@ -33,6 +34,8 @@ public class PUAttackMove : UnitMoveBehavior {
 		if (unit.agent.remainingDistance <= unit.agent.stoppingDistance && !unit.agent.pathPending)
 		{
 			stayAndGuard.InitializeBehavior (unit);
+			return;
 		}
+		unit.sC.faceDirection (unit.sC.moveRight);
 	}
 }

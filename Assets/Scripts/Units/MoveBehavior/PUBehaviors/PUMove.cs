@@ -11,6 +11,7 @@ public class PUMove : UnitMoveBehavior {
 	public override void InitializeBehavior (Unit unit)
 	{
 		unit.agent.SetDestination (unit.worldTarget);
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 
@@ -19,6 +20,8 @@ public class PUMove : UnitMoveBehavior {
 		if (unit.agent.remainingDistance <= unit.agent.stoppingDistance && !unit.agent.pathPending)
 		{
 			holdAndGuard.InitializeBehavior (unit);
+			return;
 		}
+		unit.sC.faceDirection (unit.sC.moveRight);
 	}
 }

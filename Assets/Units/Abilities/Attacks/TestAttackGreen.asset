@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c286d7aad79104d4ebc060b753ca6914, type: 3}
   m_Name: TestAttackGreen
   m_EditorClassIdentifier: 
-  minCastRange: 8
+  minCastRange: 3
   maxCastRange: 10
   cooldownDuration: 1
+  castDuration: 1
   damage: 10
   dmgBehavior: {fileID: 11400000, guid: 3c7496d196ede78409f400d502db53af, type: 2}
   hitFX: {fileID: 1843943920669672, guid: f2ef5dcbdeb4652438c3a09ec43a5b4f, type: 2}

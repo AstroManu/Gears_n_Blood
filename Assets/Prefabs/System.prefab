@@ -2261,7 +2261,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463927713318004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224927577991780454}
@@ -2667,7 +2667,7 @@ MonoBehaviour:
   gC: {fileID: 0}
   healthManager: {fileID: 0}
   agent: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  sC: {fileID: 0}
   triggerCollider: {fileID: 0}
   moveBehavior: {fileID: 11400000, guid: d8f74a1e20f1f8b41bf00fa4fcdf06b0, type: 2}
   followPosition: {fileID: 4989864614241792}
@@ -2675,6 +2675,7 @@ MonoBehaviour:
   worldTarget: {x: 0, y: 0, z: 0}
   nextSlowUpdate: 0
   targetUnit: {fileID: 0}
+  castEnd: 0
   nextAttack: 0
   nextAbility: 0
 --- !u!114 &114032508603191646
@@ -3723,7 +3724,7 @@ MonoBehaviour:
   gC: {fileID: 0}
   healthManager: {fileID: 0}
   agent: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  sC: {fileID: 0}
   triggerCollider: {fileID: 0}
   moveBehavior: {fileID: 11400000, guid: d8f74a1e20f1f8b41bf00fa4fcdf06b0, type: 2}
   followPosition: {fileID: 4233164506763824}
@@ -3731,6 +3732,7 @@ MonoBehaviour:
   worldTarget: {x: 0, y: 0, z: 0}
   nextSlowUpdate: 0
   targetUnit: {fileID: 0}
+  castEnd: 0
   nextAttack: 0
   nextAbility: 0
 --- !u!114 &114284097961469250
@@ -4433,7 +4435,7 @@ MonoBehaviour:
   gC: {fileID: 0}
   healthManager: {fileID: 0}
   agent: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  sC: {fileID: 0}
   triggerCollider: {fileID: 0}
   moveBehavior: {fileID: 11400000, guid: d8f74a1e20f1f8b41bf00fa4fcdf06b0, type: 2}
   followPosition: {fileID: 4990358096490572}
@@ -4441,6 +4443,7 @@ MonoBehaviour:
   worldTarget: {x: 0, y: 0, z: 0}
   nextSlowUpdate: 0
   targetUnit: {fileID: 0}
+  castEnd: 0
   nextAttack: 0
   nextAbility: 0
 --- !u!114 &114483286748036830
@@ -5753,7 +5756,7 @@ MonoBehaviour:
   gC: {fileID: 0}
   healthManager: {fileID: 0}
   agent: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  sC: {fileID: 0}
   triggerCollider: {fileID: 0}
   moveBehavior: {fileID: 11400000, guid: d8f74a1e20f1f8b41bf00fa4fcdf06b0, type: 2}
   followPosition: {fileID: 4243743533805572}
@@ -5761,6 +5764,7 @@ MonoBehaviour:
   worldTarget: {x: 0, y: 0, z: 0}
   nextSlowUpdate: 0
   targetUnit: {fileID: 0}
+  castEnd: 0
   nextAttack: 0
   nextAbility: 0
 --- !u!114 &114929911211436894

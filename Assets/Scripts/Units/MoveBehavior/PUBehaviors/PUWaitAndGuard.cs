@@ -15,6 +15,7 @@ public class PUWaitAndGuard : UnitMoveBehavior {
 	public override void InitializeBehavior (Unit unit)
 	{
 		unit.agent.SetDestination (unit.followPosition.position);
+		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;
 	}
 

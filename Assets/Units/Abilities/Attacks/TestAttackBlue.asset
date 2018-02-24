@@ -14,6 +14,7 @@ MonoBehaviour:
   minCastRange: 1
   maxCastRange: 5
   cooldownDuration: 1
+  castDuration: 1
   damage: 10
   dmgBehavior: {fileID: 11400000, guid: 4d7c3061cc51e1b44baa4852e07a4029, type: 2}
   hitFX: {fileID: 1608141040355574, guid: 1b61a7ba0bb2fcc47804908aada3cbaf, type: 2}

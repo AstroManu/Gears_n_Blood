@@ -42,9 +42,8 @@ public class UnitPreset : ScriptableObject {
 	public float hitAreaRadius = 0.5f;
 
 	//Sprites
-	public Vector3 spriteOffset = new Vector3 (0f, 1f, 0.6f);
-	public Sprite sergentSprite;
-	public Sprite minionSprite;
+	public GameObject spritePrefab;
+	public float spriteDeathDelay = 1f;
 
 	//Take preset values and create the unit
 	public void LoadUnitFromPreset (Unit unit)
@@ -75,17 +74,21 @@ public class UnitPreset : ScriptableObject {
 		unit.agent.acceleration = moveAccelaration;
 		unit.agent.stoppingDistance = moveStoppingDistance;
 
-		//Sprite Renderer Generation
-		GameObject spriteRoot = new GameObject ("S_" + unitName);
-		spriteRoot.transform.position = unit.transform.position;
+		//Sprite Generation
+		GameObject spriteRoot = Instantiate (spritePrefab, unit.transform.position, Quaternion.identity);
 		spriteRoot.transform.SetParent (unit.gC.spritesParent.transform);
-		spriteRoot.AddComponent<SpriteMover> ().target = unit.transform;
-		GameObject spriteObject = new GameObject ("Sprite");
-		spriteObject.transform.SetParent (spriteRoot.transform);
-		spriteObject.transform.localPosition = spriteOffset;
-		spriteObject.transform.eulerAngles = new Vector3 (90f, 0f, 0f);
-		unit.spriteRenderer = spriteObject.AddComponent<SpriteRenderer> ();
-		unit.spriteRenderer.sprite = sergentSprite;
+		unit.sC = spriteRoot.GetComponent<SpriteController> ();
+		unit.sC.target = unit.transform;
+//		GameObject spriteRoot = new GameObject ("S_" + unitName);
+//		spriteRoot.transform.position = unit.transform.position;
+//		spriteRoot.transform.SetParent (unit.gC.spritesParent.transform);
+//		spriteRoot.AddComponent<SpriteMover> ().target = unit.transform;
+//		GameObject spriteObject = new GameObject ("Sprite");
+//		spriteObject.transform.SetParent (spriteRoot.transform);
+//		spriteObject.transform.localPosition = spriteOffset;
+//		spriteObject.transform.eulerAngles = new Vector3 (90f, 0f, 0f);
+//		unit.spriteRenderer = spriteObject.AddComponent<SpriteRenderer> ();
+//		unit.spriteRenderer.sprite = sergentSprite;
 
 		//Unit Controls
 		if (unit.followPosition != null)
