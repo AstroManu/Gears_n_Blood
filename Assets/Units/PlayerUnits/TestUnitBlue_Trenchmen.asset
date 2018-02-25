@@ -31,5 +31,6 @@ MonoBehaviour:
   ability: {fileID: 11400000, guid: 4956f6d8e4815a04881255ad3db13cfe, type: 2}
   hitAreaCenter: {x: 0, y: 1, z: 1}
   hitAreaRadius: 0.5
-  spritePrefab: {fileID: 1325957962458012, guid: 61a4984fef7ae1642987ea0e3068eb9c,
+  spritePrefab: {fileID: 1325957962458012, guid: bac2414300d20954892e5c9d3661169b,
     type: 2}
+  spriteDeathDelay: 1

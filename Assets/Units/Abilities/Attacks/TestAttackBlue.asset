@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c286d7aad79104d4ebc060b753ca6914, type: 3}
   m_Name: TestAttackBlue
   m_EditorClassIdentifier: 
-  minCastRange: 1
-  maxCastRange: 5
+  minCastRange: 0
+  maxCastRange: 2
   cooldownDuration: 1
   castDuration: 1
   damage: 10

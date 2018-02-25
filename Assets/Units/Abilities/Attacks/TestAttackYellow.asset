@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c286d7aad79104d4ebc060b753ca6914, type: 3}
   m_Name: TestAttackYellow
   m_EditorClassIdentifier: 
-  minCastRange: 1
-  maxCastRange: 5
-  cooldownDuration: 1
+  minCastRange: 3
+  maxCastRange: 9
+  cooldownDuration: 2
   castDuration: 1
-  damage: 10
+  damage: 20
   dmgBehavior: {fileID: 11400000, guid: ee22e7db24d19dd4c93d3be9796493eb, type: 2}
   hitFX: {fileID: 1682267709861876, guid: 3ae7503e1ef45d4408d431dd3a429723, type: 2}

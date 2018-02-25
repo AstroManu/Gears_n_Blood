@@ -55,7 +55,7 @@ public class SpriteController : MonoBehaviour {
 
 	public void AnimDeath ()
 	{
-		anim.SetInteger ("StateIndex", 4);
+		anim.SetTrigger ("Death");
 	}
 
 	public void InitializeDeath (float destroyDelay)
