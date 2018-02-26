@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00f3391527cfcf46a07dad40a848c69, type: 3}
+  m_Name: TestEnemy_Beetle
+  m_EditorClassIdentifier: 
+  unitName: Beetle
+  unitDescription: Placeholder for testing
+  faction: Faction EUnits
+  maxHealth: 50
+  maxArmor: 0
+  maxShield: 0
+  dmgReducArmor: 0
+  agentType: -334000983
+  moveSpeed: 8
+  moveAccelaration: 100
+  moveStoppingDistance: 0.5
+  colliderRadius: 0.35
+  aggroRange: 12
+  aggroTarget:
+    serializedVersion: 2
+    m_Bits: 163840
+  attack: {fileID: 11400000, guid: 39bbfebcd1a07ed40b8c5eb5dbf8c249, type: 2}
+  ability: {fileID: 11400000, guid: 39bbfebcd1a07ed40b8c5eb5dbf8c249, type: 2}
+  hitAreaCenter: {x: 0, y: 1, z: 1}
+  hitAreaRadius: 0.5
+  spritePrefab: {fileID: 1325957962458012, guid: 61a4984fef7ae1642987ea0e3068eb9c,
+    type: 2}
+  spriteDeathDelay: 1
