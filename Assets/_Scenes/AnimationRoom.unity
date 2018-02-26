@@ -200,6 +200,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1916259896012000, guid: 94b90f1648a237d48bc65b2a4bd652bd, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212583061185409178, guid: 94b90f1648a237d48bc65b2a4bd652bd,
+        type: 2}
+      propertyPath: m_WasSpriteAssigned
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

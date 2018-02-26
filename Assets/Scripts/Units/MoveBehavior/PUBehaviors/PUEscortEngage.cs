@@ -31,7 +31,7 @@ public class PUEscortEngage : UnitMoveBehavior {
 		}
 
 		//How far is the target?
-		float targetDistance = Mathf.Sqrt(unit.CheckSqrTargetDistance (unit.targetUnit.transform));
+		float targetDistance = unit.AdaptRange (Mathf.Sqrt(unit.CheckSqrTargetDistance (unit.targetUnit.transform)), unit.targetUnit);
 
 		//Look for a potential better target
 		if (unit.SlowUpdate ())
@@ -42,12 +42,12 @@ public class PUEscortEngage : UnitMoveBehavior {
 			if (potentialTarget != null)
 			{
 				unit.targetUnit = potentialTarget;
-				targetDistance = Mathf.Sqrt(unit.CheckSqrTargetDistance (unit.targetUnit.transform));
+				targetDistance = unit.AdaptRange (Mathf.Sqrt(unit.CheckSqrTargetDistance (unit.targetUnit.transform)), unit.targetUnit);
 			}
 		}
 
 		//Target too far
-		if (targetDistance > unit.unitPreset.attack.maxCastRange)
+		if (targetDistance > unit.AdaptRange (unit.unitPreset.attack.maxCastRange, unit.targetUnit))
 		{
 			unit.agent.SetDestination (unit.targetUnit.transform.position);
 			unit.sC.faceDirection (unit.sC.moveRight);
@@ -55,7 +55,7 @@ public class PUEscortEngage : UnitMoveBehavior {
 		}
 
 		//Target too close
-		if (targetDistance < unit.unitPreset.attack.minCastRange)
+		if (targetDistance < unit.AdaptRange (unit.unitPreset.attack.minCastRange, unit.targetUnit))
 		{
 			moveBack.InitializeBehavior (unit);
 			return;
