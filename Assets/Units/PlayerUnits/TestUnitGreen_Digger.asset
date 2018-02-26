@@ -15,15 +15,15 @@ MonoBehaviour:
   unitDescription: Placeholder for testing
   faction: Faction PUnits
   maxHealth: 100
-  maxArmor: 10
-  maxShield: 10
+  maxArmor: 0
+  maxShield: 0
   dmgReducArmor: 1
   agentType: -334000983
-  moveSpeed: 8
+  moveSpeed: 13
   moveAccelaration: 100
   moveStoppingDistance: 0.5
   colliderRadius: 0.35
-  aggroRange: 15
+  aggroRange: 12
   aggroTarget:
     serializedVersion: 2
     m_Bits: 8388608

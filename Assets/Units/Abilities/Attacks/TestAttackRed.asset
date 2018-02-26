@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Name: TestAttackRed
   m_EditorClassIdentifier: 
   minCastRange: 1
-  maxCastRange: 6
-  cooldownDuration: 1
+  maxCastRange: 5
+  cooldownDuration: 0.5
   castDuration: 1
-  damage: 10
+  damage: 20
   dmgBehavior: {fileID: 11400000, guid: c8f03bd51c90a3d46818a494f5795bf6, type: 2}
   hitFX: {fileID: 1208149636671432, guid: a487b208f7c2c9242b8199b90e632444, type: 2}

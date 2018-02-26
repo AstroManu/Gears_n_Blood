@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minCastRange: 0
   maxCastRange: 1
-  cooldownDuration: 1
+  cooldownDuration: 0.5
   castDuration: 1
   damage: 10
   dmgBehavior: {fileID: 11400000, guid: 3c7496d196ede78409f400d502db53af, type: 2}
