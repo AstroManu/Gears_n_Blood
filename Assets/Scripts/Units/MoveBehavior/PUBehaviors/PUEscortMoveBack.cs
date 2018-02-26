@@ -11,7 +11,7 @@ public class PUEscortMoveBack : UnitMoveBehavior {
 	public override void InitializeBehavior (Unit unit)
 	{
 		Vector3 newDestination = unit.MoveBackPosition (unit.transform.position, unit.targetUnit.transform.position, 
-			                         unit.unitPreset.attack.minCastRange + unit.unitPreset.moveStoppingDistance, Mathf.Sqrt (unit.CheckSqrTargetDistance (unit.targetUnit.transform)));
+			unit.AdaptRange (unit.unitPreset.attack.minCastRange, unit.targetUnit) + unit.unitPreset.moveStoppingDistance, Mathf.Sqrt (unit.CheckSqrTargetDistance (unit.targetUnit.transform)));
 		unit.agent.SetDestination (newDestination);
 		unit.sC.AnimIdleMove ();
 		unit.moveBehavior = this;

@@ -89,7 +89,7 @@ public class Unit : MonoBehaviour {
 
 			for (int i = 0; i < targetsFound.Length; ++i)
 			{
-				float distance = CheckSqrTargetDistance (targetsFound[i].transform);
+				float distance = CheckSqrAdaptDistance (targetsFound[i].transform.GetComponent<Unit>());
 				if (distance <= nearestTargetDistance)
 				{
 					nearestTargetDistance = distance;
@@ -127,7 +127,7 @@ public class Unit : MonoBehaviour {
 
 			for (int i = 0; i < targetsFound.Length; ++i)
 			{
-				float distance = CheckSqrTargetDistance (targetsFound[i].transform);
+				float distance = CheckSqrAdaptDistance (targetsFound[i].transform.GetComponent<Unit>());
 				if (distance <= validTargetDistance && distance >= minRange * sqrMinRange)
 				{
 					validTargetDistance = distance;
@@ -152,6 +152,14 @@ public class Unit : MonoBehaviour {
 		return distanceToTarget;
 	}
 
+	//Squared distance between unit and targetUnit
+	public float CheckSqrAdaptDistance (Unit target)
+	{
+		Vector3 vectorToTarget = transform.position - target.transform.position;
+		float distanceToTarget = Mathf.Pow(vectorToTarget.x, 2) + Mathf.Pow(vectorToTarget.z, 2) + Mathf.Pow(target.unitPreset.colliderRadius, 2);
+		return distanceToTarget;
+	}
+
 	//Where to backoff if target is too close
 	public Vector3 MoveBackPosition (Vector3 caster, Vector3 target, float minRange, float currentDistance)
 	{
@@ -163,7 +171,7 @@ public class Unit : MonoBehaviour {
 	//Range adapted to target's radius
 	public float AdaptRange (float distance, Unit target)
 	{
-		return 0f;
+		return distance + target.unitPreset.colliderRadius;
 	}
 
 	//Where an hit fx appear when the unit is attacked
