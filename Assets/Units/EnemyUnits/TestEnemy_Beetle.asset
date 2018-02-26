@@ -26,7 +26,7 @@ MonoBehaviour:
   aggroRange: 12
   aggroTarget:
     serializedVersion: 2
-    m_Bits: 163840
+    m_Bits: 131072
   attack: {fileID: 11400000, guid: 39bbfebcd1a07ed40b8c5eb5dbf8c249, type: 2}
   ability: {fileID: 11400000, guid: 39bbfebcd1a07ed40b8c5eb5dbf8c249, type: 2}
   hitAreaCenter: {x: 0, y: 1, z: 1}
