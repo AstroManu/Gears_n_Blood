@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c286d7aad79104d4ebc060b753ca6914, type: 3}
   m_Name: TestAttackKillerbot
   m_EditorClassIdentifier: 
-  minCastRange: 1
+  minCastRange: 3
   maxCastRange: 10
   cooldownDuration: 1.5
   castDuration: 1
-  damage: 60
+  damage: 30
   dmgBehavior: {fileID: 11400000, guid: ee22e7db24d19dd4c93d3be9796493eb, type: 2}
   hitFX: {fileID: 1366573018830714, guid: 5781720ced943a9448a010529fd0d222, type: 2}
