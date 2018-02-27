@@ -14,15 +14,15 @@ MonoBehaviour:
   unitName: Killerbot
   unitDescription: Placeholder for testing
   faction: Faction EUnits
-  maxHealth: 20
+  maxHealth: 40
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0
-  agentType: -334000983
-  moveSpeed: 8
+  agentType: 1479372276
+  moveSpeed: 2
   moveAccelaration: 100
   moveStoppingDistance: 0.5
-  colliderRadius: 0.35
+  colliderRadius: 0.6
   aggroRange: 12
   aggroTarget:
     serializedVersion: 2

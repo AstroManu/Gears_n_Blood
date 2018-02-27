@@ -14,12 +14,12 @@ MonoBehaviour:
   unitName: Seeker
   unitDescription: Placeholder for testing
   faction: Faction EUnits
-  maxHealth: 20
+  maxHealth: 40
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0
   agentType: -334000983
-  moveSpeed: 13
+  moveSpeed: 3
   moveAccelaration: 100
   moveStoppingDistance: 0.5
   colliderRadius: 0.35

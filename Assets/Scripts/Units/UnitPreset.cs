@@ -52,10 +52,13 @@ public class UnitPreset : ScriptableObject {
 		unit.gameObject.layer = LayerMask.NameToLayer(faction);
 
 		//HealthManager Generation
-		unit.healthManager = unit.gameObject.AddComponent <HealthManager> ();
 		if (unit.isPlayerUnit)
 		{
-			unit.healthManager.isPlayerUnit = true;
+			unit.healthManager = unit.gameObject.AddComponent <HealthManagerPU> ();
+		}
+		else 
+		{
+			unit.healthManager = unit.gameObject.AddComponent <HealthManagerEU> ();
 		}
 		unit.healthManager.maxHealth = maxHealth;
 		unit.healthManager.health = maxHealth;
