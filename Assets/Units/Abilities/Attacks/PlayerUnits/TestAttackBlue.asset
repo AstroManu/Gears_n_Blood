@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: TestAttackBlue
   m_EditorClassIdentifier: 
   minCastRange: 0
-  maxCastRange: 1
+  maxCastRange: 1.5
   cooldownDuration: 0.5
   castDuration: 1
   damage: 10

@@ -18,11 +18,12 @@ MonoBehaviour:
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0
-  agentType: -334000983
+  agentType: 1479372276
   moveSpeed: 2
   moveAccelaration: 100
   moveStoppingDistance: 0.5
-  colliderRadius: 0.35
+  agentPriority: 35
+  colliderRadius: 0.6
   aggroRange: 12
   aggroTarget:
     serializedVersion: 2
@@ -31,6 +32,6 @@ MonoBehaviour:
   ability: {fileID: 11400000, guid: 39bbfebcd1a07ed40b8c5eb5dbf8c249, type: 2}
   hitAreaCenter: {x: 0, y: 1, z: 1}
   hitAreaRadius: 0.5
-  spritePrefab: {fileID: 1325957962458012, guid: 61a4984fef7ae1642987ea0e3068eb9c,
+  spritePrefab: {fileID: 1916259896012000, guid: 94b90f1648a237d48bc65b2a4bd652bd,
     type: 2}
   spriteDeathDelay: 1

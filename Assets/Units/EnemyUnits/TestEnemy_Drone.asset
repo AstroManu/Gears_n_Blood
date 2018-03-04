@@ -22,6 +22,7 @@ MonoBehaviour:
   moveSpeed: 2
   moveAccelaration: 100
   moveStoppingDistance: 0.5
+  agentPriority: 45
   colliderRadius: 0.35
   aggroRange: 12
   aggroTarget:

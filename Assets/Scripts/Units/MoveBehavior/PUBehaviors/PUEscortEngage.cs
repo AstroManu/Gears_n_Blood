@@ -55,7 +55,7 @@ public class PUEscortEngage : UnitMoveBehavior {
 		}
 
 		//Target too close
-		if (targetDistance < unit.AdaptRange (unit.unitPreset.attack.minCastRange, unit.targetUnit))
+		if (targetDistance < unit.unitPreset.attack.minCastRange)
 		{
 			moveBack.InitializeBehavior (unit);
 			return;

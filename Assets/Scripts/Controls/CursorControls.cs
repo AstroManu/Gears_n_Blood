@@ -114,6 +114,8 @@ public class CursorControls : MonoBehaviour {
 	//Input
 	void InputCommand (Unit squad, bool doublePress)
 	{
+		squad.agent.avoidancePriority = squad.unitPreset.agentPriority;
+
 		if (Input.GetKey (KeyCode.Joystick1Button4))
 		{
 			squad.worldTarget = transform.position;

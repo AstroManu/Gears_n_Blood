@@ -25,6 +25,7 @@ public class UnitPreset : ScriptableObject {
 	public float moveSpeed = 10f;
 	public float moveAccelaration = 50f;
 	public float moveStoppingDistance = 0.5f;
+	public int agentPriority = 50;
 
 	//Size Stats
 	[HideInInspector] public float colliderRadius = 0.5f;
@@ -76,22 +77,14 @@ public class UnitPreset : ScriptableObject {
 		unit.agent.speed = moveSpeed;
 		unit.agent.acceleration = moveAccelaration;
 		unit.agent.stoppingDistance = moveStoppingDistance;
+		unit.agent.avoidancePriority = agentPriority;
+		//unit.agent.obstacleAvoidanceType = ObstacleAvoidanceType.GoodQualityObstacleAvoidance;
 
 		//Sprite Generation
 		GameObject spriteRoot = Instantiate (spritePrefab, unit.transform.position, Quaternion.identity);
 		spriteRoot.transform.SetParent (unit.gC.spritesParent.transform);
 		unit.sC = spriteRoot.GetComponent<SpriteController> ();
 		unit.sC.target = unit.transform;
-//		GameObject spriteRoot = new GameObject ("S_" + unitName);
-//		spriteRoot.transform.position = unit.transform.position;
-//		spriteRoot.transform.SetParent (unit.gC.spritesParent.transform);
-//		spriteRoot.AddComponent<SpriteMover> ().target = unit.transform;
-//		GameObject spriteObject = new GameObject ("Sprite");
-//		spriteObject.transform.SetParent (spriteRoot.transform);
-//		spriteObject.transform.localPosition = spriteOffset;
-//		spriteObject.transform.eulerAngles = new Vector3 (90f, 0f, 0f);
-//		unit.spriteRenderer = spriteObject.AddComponent<SpriteRenderer> ();
-//		unit.spriteRenderer.sprite = sergentSprite;
 
 		//Unit Controls
 		if (unit.followPosition != null)

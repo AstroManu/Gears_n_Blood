@@ -89,7 +89,7 @@ public class Unit : MonoBehaviour {
 
 			for (int i = 0; i < targetsFound.Length; ++i)
 			{
-				float distance = CheckSqrAdaptDistance (targetsFound[i].transform.GetComponent<Unit>());
+				float distance = CheckSqrTargetDistance (targetsFound[i].transform);
 				if (distance <= nearestTargetDistance)
 				{
 					nearestTargetDistance = distance;
@@ -127,7 +127,7 @@ public class Unit : MonoBehaviour {
 
 			for (int i = 0; i < targetsFound.Length; ++i)
 			{
-				float distance = CheckSqrAdaptDistance (targetsFound[i].transform.GetComponent<Unit>());
+				float distance = CheckSqrTargetDistance (targetsFound[i].transform);
 				if (distance <= validTargetDistance && distance >= minRange * sqrMinRange)
 				{
 					validTargetDistance = distance;

@@ -6,8 +6,6 @@ using UnityEngine.AI;
 [CreateAssetMenu (fileName = "PUnitHoldAndGuard", menuName = "Player Unit MoveBehavior/Move and Hold/Hold and Guard", order = 41)]
 public class PUHoldAndGuard : UnitMoveBehavior {
 
-	public float targetSwitchCondition = 0.8f;
-
 	public UnitMoveBehavior castAttack;
 
 	public override void InitializeBehavior (Unit unit)

@@ -29,12 +29,15 @@ public class PUGuardAndEngage : UnitMoveBehavior {
 		}
 
 		//How far is the target?
-		float targetDistance = unit.AdaptRange (Mathf.Sqrt(unit.CheckSqrTargetDistance (unit.targetUnit.transform)), unit.targetUnit);
+		//float targetDistance = unit.AdaptRange (Mathf.Sqrt(unit.CheckSqrTargetDistance (unit.targetUnit.transform)), unit.targetUnit);
+		float targetDistance = Mathf.Sqrt(unit.CheckSqrTargetDistance (unit.targetUnit.transform));
 
 		//Look for a potential better target
 		if (unit.SlowUpdate ())
 		{
-			Unit potentialTarget = unit.LookForTarget (unit.transform.position, Mathf.Clamp (targetDistance * targetSwitchCondition, 0f, unit.unitPreset.attack.maxCastRange),
+//			Unit potentialTarget = unit.LookForTarget (unit.transform.position, Mathf.Clamp (targetDistance * targetSwitchCondition, 0f, unit.unitPreset.attack.maxCastRange),
+//				unit.unitPreset.attack.minCastRange, unit.unitPreset.aggroTarget);
+			Unit potentialTarget = unit.LookForTarget (unit.transform.position, targetDistance * targetSwitchCondition,
 				unit.unitPreset.attack.minCastRange, unit.unitPreset.aggroTarget);
 
 			if (potentialTarget != null)
@@ -53,7 +56,7 @@ public class PUGuardAndEngage : UnitMoveBehavior {
 		}
 
 		//Target too close
-		if (targetDistance < unit.AdaptRange (unit.unitPreset.attack.minCastRange, unit.targetUnit))
+		if (targetDistance < unit.unitPreset.attack.minCastRange)
 		{
 			moveBack.InitializeBehavior (unit);
 			return;

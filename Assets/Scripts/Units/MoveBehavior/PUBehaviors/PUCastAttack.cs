@@ -18,6 +18,7 @@ public class PUCastAttack : UnitMoveBehavior {
 			unit.nextAttack = Time.time + unit.unitPreset.attack.cooldownDuration;
 			unit.castEnd = Time.time + unit.unitPreset.attack.castDuration;
 			unit.sC.faceDirection (unit.transform.position.x <= unit.targetUnit.transform.position.x);
+			unit.agent.avoidancePriority = 30;
 		}
 	}
 
@@ -25,6 +26,7 @@ public class PUCastAttack : UnitMoveBehavior {
 	{
 		if (Time.time >= unit.castEnd)
 		{
+			unit.agent.avoidancePriority = unit.unitPreset.agentPriority;
 			returnTo.InitializeBehavior (unit);
 		}
 	}

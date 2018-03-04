@@ -7,6 +7,7 @@ public class SpriteController : MonoBehaviour {
 	public Transform target;
 	private Animator anim;
 	private SpriteRenderer sR;
+	private float nextFaceUpdate = 0f;
 
 	[HideInInspector] public bool moveRight = true;
 
@@ -31,7 +32,8 @@ public class SpriteController : MonoBehaviour {
 		else
 		{
 			anim.SetBool ("IsMoving", true);
-			moveRight = transform.position.x <= target.transform.position.x;
+			//moveRight = transform.position.x <= target.transform.position.x;
+			moveRight = UpdateFaceRight();
 			transform.position = target.position;
 			int pos = Mathf.RoundToInt (transform.position.z * 2f);
 			sR.sortingOrder = (pos * -1);
@@ -72,5 +74,15 @@ public class SpriteController : MonoBehaviour {
 			return;
 		}
 		transform.localScale = new Vector3 (-1f, 1f, 1f);
+	}
+
+	public bool UpdateFaceRight ()
+	{
+		if (Time.time >= nextFaceUpdate)
+		{
+			nextFaceUpdate = Time.time + 0.5f;
+			return transform.position.x <= target.transform.position.x;
+		}
+		return moveRight;
 	}
 }
