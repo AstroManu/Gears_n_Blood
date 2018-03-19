@@ -17,7 +17,7 @@ public class PUController : UnitController {
 
 	[HideInInspector] public float timePressed = 0f;
 
-	void Start ()
+	public override void InitializeController ()
 	{
 		unit = gameObject.GetComponent<GameUnit> ();
 		player = ReInput.players.GetPlayer (playerName);

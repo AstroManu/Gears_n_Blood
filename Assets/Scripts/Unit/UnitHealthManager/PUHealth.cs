@@ -6,7 +6,7 @@ public class PUHealth : UnitHealth {
 
 	public UiSquadDisplay squadDisplay;
 
-	void Start()
+	public override void InitializeHealth()
 	{
 		squadDisplay.InitializeDisplay (unit);
 	}

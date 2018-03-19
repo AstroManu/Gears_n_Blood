@@ -24,6 +24,8 @@ public class GameUnit : MonoBehaviour {
 		gC = StaticRef.gameControllerRef.GetComponent<GameController> ();
 
 		//Get Components
+		agent = GetComponent<NavMeshAgent> ();
+		triggerCollider = GetComponent<SphereCollider> ();
 		health = GetComponent<UnitHealth> ();
 		health.unit = this;
 		controller = GetComponent<UnitController> ();
@@ -33,14 +35,14 @@ public class GameUnit : MonoBehaviour {
 		{
 			stateC.unit = this;
 		}
-		agent = GetComponent<NavMeshAgent> ();
-		triggerCollider = GetComponent<SphereCollider> ();
 
 		//Load unit from UnitRef
 		if (preset != null && loadRefValues)
 		{
 			preset.LoadUnitFromRef (this);
 		}
+		health.InitializeHealth ();
+		controller.InitializeController ();
 	}
 
 	//Where an hit fx appear when the unit is attacked

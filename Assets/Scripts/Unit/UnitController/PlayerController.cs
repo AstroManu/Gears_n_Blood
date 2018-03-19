@@ -35,7 +35,7 @@ public class PlayerController : UnitController {
 
 	[HideInInspector] public NavMeshAgent agent;
 
-	void Start ()
+	public override void InitializeController ()
 	{
 		unit = gameObject.GetComponent<GameUnit> ();
 		player = ReInput.players.GetPlayer (playerName);

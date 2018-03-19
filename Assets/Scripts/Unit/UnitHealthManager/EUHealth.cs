@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class EUHealth : UnitHealth {
 
-
+	public override void InitializeHealth ()
+	{
+		
+	}
 
 	public override void DestroyUnit ()
 	{

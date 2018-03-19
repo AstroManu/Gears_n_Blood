@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EUController : UnitController {
 
-	void Start ()
+	public override void InitializeController ()
 	{
 		worldTarget = transform.position;
 	}

@@ -13,6 +13,8 @@ public abstract class UnitHealth : MonoBehaviour {
 	public float maxShield;
 	public float shield;
 
+	public abstract void InitializeHealth ();
+
 	public void Damage (float amount, GameUnit source)
 	{
 //		if (shield > 0f)

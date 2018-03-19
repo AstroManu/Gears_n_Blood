@@ -11,6 +11,7 @@ public abstract class UnitController : MonoBehaviour {
 	[HideInInspector] public GameUnit unit;
 	[HideInInspector] public Vector3 worldTarget = Vector3.zero;
 
+	public abstract void InitializeController ();
 	public abstract void ReportCast (int castedAbility);
 
 }
