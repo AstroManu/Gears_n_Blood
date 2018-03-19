@@ -50,6 +50,9 @@ TagManager:
   - name: Ground UI
     uniqueID: 2900316293
     locked: 0
+  - name: Cursor
+    uniqueID: 2508455607
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

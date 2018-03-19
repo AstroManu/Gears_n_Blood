@@ -38,7 +38,7 @@ MonoBehaviour:
     maxRange: 8
     coolDownDuration: 5
     castLockDuration: 1
-    castAnimIndex: 00000000
+    castAnimIndex: 01000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
   spritePrefab: {fileID: 1325957962458012, guid: 923ec7e85327a69489bf12addd4b3ac8,
