@@ -1,0 +1,90 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class UnitStateController : MonoBehaviour {
+
+	[HideInInspector] public GameUnit unit;
+
+	public AI_State currentState;
+	public AI_State nextState;
+
+	//Follow Position
+	public Transform followPosition;
+	[HideInInspector] public Vector3 followPosMemory;
+
+	//Target
+	public GameUnit currentTarget;
+	[HideInInspector] public float distanceToTarget = 0f;
+
+	//Abilities
+	[HideInInspector] public float nextAttack = 0f; //Time.time when GameUnit can use main attack
+	[HideInInspector] public int activeAbility = 0;
+	[HideInInspector] public float castLockTime = 0f; //Time.time when GameUnit is out of active cast
+
+	//SlowUpdate
+	private float nextSlowUpdate = 0f;
+
+	void Update ()
+	{
+		currentState.StateBehavior (unit);
+	}
+
+	//Find all available targets in Radius
+	public void AcquireTarget (Vector3 center, float radius, LayerMask lookForLayer)
+	{
+		List<TargetUnit> targets = new List<TargetUnit>();
+		Collider[] targetsFound = Physics.OverlapSphere (center, radius, lookForLayer);
+		if (targetsFound.Length <= 0)
+		{
+			return;
+		}
+
+		foreach (Collider col in targetsFound)
+		{
+			GameUnit target = col.transform.GetComponent<GameUnit>();
+			targets.Add (new TargetUnit (target, CalculateAggro (target)));
+		}
+		targets.Sort ();
+		currentTarget = targets [0].unit;
+	}
+
+	//Generate a value to sort Targets by priority
+	public float CalculateAggro (GameUnit aggroTarget)
+	{
+		Vector3 distVector = transform.position - aggroTarget.transform.position;
+		return 0f - (distVector.x * distVector.x + distVector.z * distVector.z);
+	}
+
+	//SlowUpdate
+	public bool SlowUpdate ()
+	{
+		if (Time.time >= nextSlowUpdate)
+		{
+			nextSlowUpdate = Time.time + unit.gC.slowUpdateDuration;
+			return true;
+		}
+		return false;
+	}
+
+	//How far is the unit from this one, minus both units radius
+	public float CalculateDistToUnit (GameUnit targetUnit)
+	{
+		return Vector3.Distance (transform.position, targetUnit.transform.position) - (unit.preset.colliderRadius + targetUnit.preset.colliderRadius);
+	}
+
+	//How far is the position from this unit, minus unit radius
+	public float CalculateDistToGround (Vector3 pos)
+	{
+		return Vector3.Distance (transform.position, pos) - unit.preset.colliderRadius;
+	}
+
+	//Where to backoff if target is too close
+	public Vector3 MoveBackPosition (Vector3 target, float minRange, float currentDistance)
+	{
+		Vector3 moveVector = transform.position - target;
+
+		return transform.position + moveVector.normalized * (minRange - currentDistance + unit.agent.stoppingDistance);
+	}
+
+}

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4464775449012348}
   - component: {fileID: 95696283815413718}
   - component: {fileID: 114826749974706000}
+  - component: {fileID: 210204580400375838}
   m_Layer: 0
   m_Name: PUSniperSpriteController
   m_TagString: Untagged
@@ -101,6 +102,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   moveRight: 1
+--- !u!210 &210204580400375838
+SortingGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1325957962458012}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!212 &212521835936264524
 SpriteRenderer:
   m_ObjectHideFlags: 1

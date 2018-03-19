@@ -39,7 +39,16 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
+    uniqueID: 2998700477
+    locked: 0
+  - name: GroundTilemap
     uniqueID: 1177959255
+    locked: 0
+  - name: GroundFx
+    uniqueID: 3946198619
+    locked: 0
+  - name: Ground UI
+    uniqueID: 2900316293
     locked: 0
   - name: Default
     uniqueID: 0
