@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 4937175759531242}
   - component: {fileID: 95331406482882784}
   - component: {fileID: 114515672616105474}
+  - component: {fileID: 210284618470566236}
   m_Layer: 0
   m_Name: EUDroneSpriteController
   m_TagString: Untagged
@@ -101,6 +102,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   moveRight: 1
+--- !u!210 &210284618470566236
+SortingGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1916259896012000}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!212 &212583061185409178
 SpriteRenderer:
   m_ObjectHideFlags: 1

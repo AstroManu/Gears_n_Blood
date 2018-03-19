@@ -6,16 +6,17 @@ public class SpriteController : MonoBehaviour {
 
 	public Transform target;
 	private Animator anim;
-	private SpriteRenderer sR;
+	//private SpriteRenderer sR;
 	private float nextFaceUpdate = 0f;
 
 	[HideInInspector] public bool moveRight = true;
 
-	void Start ()
+	public void InitializeSpriteC (GameUnit unit)
 	{
 		anim = GetComponent<Animator> ();
+		target = unit.transform;
 		AnimIdleMove ();
-		sR = GetComponentInChildren <SpriteRenderer> ();
+		//sR = GetComponentInChildren <SpriteRenderer> ();
 	}
 
 	void Update ()
@@ -35,8 +36,8 @@ public class SpriteController : MonoBehaviour {
 			//moveRight = transform.position.x <= target.transform.position.x;
 			moveRight = UpdateFaceRight();
 			transform.position = target.position;
-			int pos = Mathf.RoundToInt (transform.position.z * 2f);
-			sR.sortingOrder = (pos * -1);
+			//int pos = Mathf.RoundToInt (transform.position.z * 2f);
+			//sR.sortingOrder = (pos * -1);
 		}
 	}
 
@@ -45,24 +46,14 @@ public class SpriteController : MonoBehaviour {
 		anim.SetInteger ("StateIndex", 1);
 	}
 
-	public void AnimAttack ()
+	public void AnimCast (int[] castIndex)
 	{
 		anim.SetInteger ("StateIndex", 2);
-	}
-
-	public void AnimCast ()
-	{
-		anim.SetInteger ("StateIndex", 3);
-	}
-
-	public void AnimDeath ()
-	{
-		anim.SetTrigger ("Death");
+		anim.SetInteger ("CastIndex", castIndex[Random.Range (0, castIndex.Length)]);
 	}
 
 	public void InitializeDeath (float destroyDelay)
 	{
-		AnimDeath ();
 		Destroy (gameObject, destroyDelay);
 	}
 

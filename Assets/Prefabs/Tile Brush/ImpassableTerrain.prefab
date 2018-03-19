@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65111825885353308}
   - component: {fileID: 23150610912527224}
   - component: {fileID: 114396842465009304}
+  - component: {fileID: 114477239571464548}
   m_Layer: 9
   m_Name: ImpassableTerrain
   m_TagString: Untagged
@@ -107,3 +108,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb559247c070d241a0256685d6f59b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114477239571464548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1802305057632156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
