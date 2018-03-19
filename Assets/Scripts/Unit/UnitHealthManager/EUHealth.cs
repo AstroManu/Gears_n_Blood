@@ -8,7 +8,9 @@ public class EUHealth : UnitHealth {
 
 	public override void DestroyUnit ()
 	{
-		Debug.Log ("EU " + gameObject.name + " is dead!");
+		unit.preset.deathFx.Cast (unit, transform.position);
+		Destroy (unit.spriteC.gameObject);
+		Destroy (gameObject);
 	}
 
 	public override void UpdateDisplay ()

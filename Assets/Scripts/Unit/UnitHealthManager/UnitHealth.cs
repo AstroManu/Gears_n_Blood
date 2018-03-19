@@ -6,11 +6,11 @@ public abstract class UnitHealth : MonoBehaviour {
 
 	[HideInInspector] public GameUnit unit;
 
-	[HideInInspector] public float maxHealth;
+	public float maxHealth;
 	public float health;
-	[HideInInspector] public float maxArmor;
+	public float maxArmor;
 	public float armor;
-	[HideInInspector] public float maxShield;
+	public float maxShield;
 	public float shield;
 
 	public void Damage (float amount, GameUnit source)

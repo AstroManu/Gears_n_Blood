@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class PUHealth : UnitHealth {
 
+	public UiSquadDisplay squadDisplay;
 
+	void Start()
+	{
+		squadDisplay.InitializeDisplay (unit);
+	}
 
 	public override void DestroyUnit ()
 	{
-		Debug.Log ("PU " + gameObject.name + " is dead!");
+		unit.preset.deathFx.Cast (unit, transform.position);
+		squadDisplay.gameObject.SetActive (false);
+		Destroy (unit.spriteC.gameObject);
+		Destroy (gameObject);
 	}
 
 	public override void UpdateDisplay ()
 	{
-		
+		squadDisplay.UpdateHealth ();
 	}
 }

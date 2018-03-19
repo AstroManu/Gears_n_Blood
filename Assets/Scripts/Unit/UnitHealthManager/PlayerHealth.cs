@@ -8,7 +8,9 @@ public class PlayerHealth : UnitHealth {
 
 	public override void DestroyUnit ()
 	{
-		Debug.Log ("Commander is dead!");
+		unit.preset.deathFx.Cast (unit, transform.position);
+		Destroy (unit.spriteC.gameObject);
+		Destroy (gameObject);
 	}
 
 	public override void UpdateDisplay ()

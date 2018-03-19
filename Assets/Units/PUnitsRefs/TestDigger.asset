@@ -36,11 +36,11 @@ MonoBehaviour:
   - ability: {fileID: 11400000, guid: f80aacfd2b0173a4e80ef3e038305db1, type: 2}
     minRange: 2
     maxRange: 8
-    coolDownDuration: 1.2
+    coolDownDuration: 5
     castLockDuration: 1
     castAnimIndex: 00000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
   spritePrefab: {fileID: 1325957962458012, guid: 923ec7e85327a69489bf12addd4b3ac8,
     type: 2}
-  deathFx: {fileID: 0}
+  deathFx: {fileID: 11400000, guid: 0125c52ff73ebfa49991ca18fc3ace42, type: 2}

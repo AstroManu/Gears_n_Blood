@@ -9,7 +9,7 @@ public class AbPos_LerpBetweenCastAndTarget : AbilityPosition {
 
 	public override Vector3 eventPos (GameUnit caster, Vector3 target)
 	{
-		return Vector3.LerpUnclamped (caster.transform.position, target, lerpValue);
+		return Vector3.LerpUnclamped (caster.transform.position, target, lerpValue) + offset;
 	}
 
 }

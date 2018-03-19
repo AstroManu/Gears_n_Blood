@@ -10,7 +10,7 @@ public class AIA_CastGround : AI_Action {
 	public override void DoAction (GameUnit unit, AI_State state)
 	{
 		unit.agent.avoidancePriority = castAvoidancePriority;
-		unit.stateC.nextAttack = Time.time + unit.preset.ability[unit.stateC.activeAbility].coolDownDuration;
+		unit.stateC.nextAbility = Time.time + unit.preset.ability[unit.stateC.activeAbility].coolDownDuration;
 		unit.stateC.castLockTime = Time.time + unit.preset.ability[unit.stateC.activeAbility].castLockDuration;
 
 		unit.preset.ability[unit.stateC.activeAbility].ability.Cast (unit, unit.controller.worldTarget);

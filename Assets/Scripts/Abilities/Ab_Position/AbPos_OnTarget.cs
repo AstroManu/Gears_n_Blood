@@ -7,7 +7,7 @@ public class AbPos_OnTarget : AbilityPosition {
 
 	public override Vector3 eventPos (GameUnit caster, Vector3 target)
 	{
-		return target;
+		return target + offset;
 	}
 
 }

@@ -19,7 +19,8 @@ public class UnitStateController : MonoBehaviour {
 
 	//Abilities
 	[HideInInspector] public float nextAttack = 0f; //Time.time when GameUnit can use main attack
-	[HideInInspector] public int activeAbility = 0;
+	[HideInInspector] public float nextAbility = 0f; //Time.time when PU GameUnit can use ability
+	[HideInInspector] public int activeAbility = 0; //Ability that will be casted (from UnitRef ability array index)
 	[HideInInspector] public float castLockTime = 0f; //Time.time when GameUnit is out of active cast
 
 	//SlowUpdate

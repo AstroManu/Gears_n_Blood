@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713d08dfe3511ca49acbd8d84788c58c, type: 3}
   m_Name: TestAbility2
   m_EditorClassIdentifier: 
-  allowFriendlyFire: 0
+  allowFriendlyFire: 1
   abilityEvents:
   - startTime: 0
     endTime: 0.5
