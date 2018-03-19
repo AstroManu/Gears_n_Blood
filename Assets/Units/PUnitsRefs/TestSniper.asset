@@ -31,13 +31,13 @@ MonoBehaviour:
     minRange: 2
     maxRange: 8
     coolDownDuration: 1.2
-    castLockDuration: 4
+    castLockDuration: 1
     castAnimIndex: 00000000
   - ability: {fileID: 11400000, guid: 84f679c04389d6c4eadd13c4a6722b46, type: 2}
     minRange: 1
     maxRange: 8
     coolDownDuration: 5
-    castLockDuration: 1
+    castLockDuration: 4
     castAnimIndex: 02000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5

@@ -33,9 +33,9 @@ MonoBehaviour:
     coolDownDuration: 1.2
     castLockDuration: 1
     castAnimIndex: 00000000
-  - ability: {fileID: 11400000, guid: f80aacfd2b0173a4e80ef3e038305db1, type: 2}
-    minRange: 2
-    maxRange: 8
+  - ability: {fileID: 11400000, guid: 17a020fc576e33c43b5c23d96a215043, type: 2}
+    minRange: 0
+    maxRange: 12
     coolDownDuration: 5
     castLockDuration: 1
     castAnimIndex: 01000000
