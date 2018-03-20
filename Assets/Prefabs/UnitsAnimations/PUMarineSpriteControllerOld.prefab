@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4464775449012348}
   - component: {fileID: 95696283815413718}
   - component: {fileID: 114826749974706000}
-  - component: {fileID: 210428324975109974}
+  - component: {fileID: 210831509315543152}
   m_Layer: 0
-  m_Name: PU_BetaTest
+  m_Name: PUMarineSpriteControllerOld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ Animator:
   m_GameObject: {fileID: 1325957962458012}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 99c1b8f87df1939469ccaeed2faaa67e, type: 2}
+  m_Controller: {fileID: 22100000, guid: b5dc0ed9533f6b04f8057269d19d5833, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   moveRight: 1
---- !u!210 &210428324975109974
+--- !u!210 &210831509315543152
 SortingGroup:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
