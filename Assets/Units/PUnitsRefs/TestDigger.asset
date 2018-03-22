@@ -33,14 +33,14 @@ MonoBehaviour:
     coolDownDuration: 1.2
     castLockDuration: 1
     castAnimIndex: 00000000
-  - ability: {fileID: 11400000, guid: f80aacfd2b0173a4e80ef3e038305db1, type: 2}
-    minRange: 2
-    maxRange: 8
+  - ability: {fileID: 11400000, guid: 17a020fc576e33c43b5c23d96a215043, type: 2}
+    minRange: 0
+    maxRange: 12
     coolDownDuration: 5
     castLockDuration: 1
     castAnimIndex: 01000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
-  spritePrefab: {fileID: 1325957962458012, guid: 923ec7e85327a69489bf12addd4b3ac8,
+  spritePrefab: {fileID: 1199879447677284, guid: 4a6291aef90bb524190ce542ead4a5f6,
     type: 2}
   deathFx: {fileID: 11400000, guid: 0125c52ff73ebfa49991ca18fc3ace42, type: 2}

@@ -8,6 +8,7 @@ public class SpriteController : MonoBehaviour {
 	private Animator anim;
 	//private SpriteRenderer sR;
 	private float nextFaceUpdate = 0f;
+	public SpriteRenderer[] coloredSprite;
 
 	[HideInInspector] public bool moveRight = true;
 
@@ -17,6 +18,14 @@ public class SpriteController : MonoBehaviour {
 		target = unit.transform;
 		AnimIdleMove ();
 		//sR = GetComponentInChildren <SpriteRenderer> ();
+	}
+
+	public void SetUnitColor (Color unitColor)
+	{
+		foreach (SpriteRenderer spriteToColor in coloredSprite)
+		{
+			spriteToColor.color = unitColor;
+		}
 	}
 
 	void Update ()

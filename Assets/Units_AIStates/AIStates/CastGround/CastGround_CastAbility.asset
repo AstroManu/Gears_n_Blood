@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialAction:
   - {fileID: 11400000, guid: dfca15e62de1a6a459e7a19098fbae8d, type: 2}
-  - {fileID: 11400000, guid: 6ba45a9871a7c924ebd0ffb7117308a0, type: 2}
+  - {fileID: 11400000, guid: 4a9a3f6ed9323b346a20c11b18d006a6, type: 2}
   - {fileID: 11400000, guid: 38c122f4717e5f34e8d5ba2ce07c0622, type: 2}
   - {fileID: 11400000, guid: 9e4d5e86ce79ae4419461770763bc12b, type: 2}
   - {fileID: 11400000, guid: 74ee92381cfe0f54888a3f98d4a9df17, type: 2}

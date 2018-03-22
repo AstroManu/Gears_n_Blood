@@ -21,6 +21,7 @@ public class PUController : UnitController {
 	{
 		unit = gameObject.GetComponent<GameUnit> ();
 		player = ReInput.players.GetPlayer (playerName);
+		unit.spriteC.SetUnitColor (squadColor);
 	}
 
 	void Update ()
