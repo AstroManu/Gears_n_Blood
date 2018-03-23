@@ -4,6 +4,6 @@ using UnityEngine;
 
 public abstract class EffectSearch : ScriptableObject {
 
-	public abstract List<GameUnit> SearchUnits (LayerMask canAcquire, Transform ev);
+	public abstract List<GameUnit> SearchUnits (LayerMask canAcquire, EventCaster ev);
 
 }

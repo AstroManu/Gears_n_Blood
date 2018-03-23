@@ -6,14 +6,20 @@ using UnityEngine;
 public class ESP_SphereSearch : EffectSearch {
 
 	public float sphereRadius = 1f;
+	public bool canHitCaster;
 
-	public override List<GameUnit> SearchUnits (LayerMask canAcquire, Transform ev)
+	public override List<GameUnit> SearchUnits (LayerMask canAcquire, EventCaster ev)
 	{
-		Collider[] col = Physics.OverlapSphere (ev.position, sphereRadius, canAcquire);
+		Collider[] col = Physics.OverlapSphere (ev.transform.position, sphereRadius, canAcquire);
 		List<GameUnit> unitList = new List<GameUnit>();
 		foreach (Collider hit in col)
 		{
-			unitList.Add (hit.GetComponent<GameUnit> ());
+			GameUnit hitUnit = hit.GetComponent<GameUnit> ();
+
+			if (hitUnit != ev.caster || canHitCaster)
+			{
+				unitList.Add (hitUnit);
+			}
 		}
 		return unitList;
 	}
