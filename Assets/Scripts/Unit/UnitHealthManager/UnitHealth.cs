@@ -17,23 +17,26 @@ public abstract class UnitHealth : MonoBehaviour {
 
 	public void Damage (float amount, GameUnit source)
 	{
-//		if (shield > 0f)
-//		{
-//			shield = Mathf.Clamp (shield - amount, 0f, maxShield);
-//			return;
-//		}
-//		if (armor > 0f)
-//		{
-//			armor = Mathf.Clamp (armor - amount, 0f, maxArmor);
-//			return;
-//		}
-//		health -= amount;
-//
-//		if (health <= 0f)
-//		{
-//			DestroyUnit ();
-//		}
+		DoDamage (amount);
+		UpdateDisplay ();
+		if (health <= 0f)
+		{
+			DestroyUnit ();
+		}
+	}
 
+	public void EnvDamage (float amount)
+	{
+		DoDamage (amount);
+		UpdateDisplay ();
+		if (health <= 0f)
+		{
+			DestroyUnit ();
+		}
+	}
+
+	public void DoDamage (float amount)
+	{
 		float damage = amount;
 
 		//Damage on Shield
@@ -48,7 +51,7 @@ public abstract class UnitHealth : MonoBehaviour {
 
 		//Damage on Armor
 		float dmgOnArmor = Mathf.Max (damage - unit.preset.dmgReducArmor, 0f);
-		damage -= armor + unit.preset.dmgReducArmor;
+		damage -= armor + Mathf.Min (unit.preset.dmgReducArmor, armor);
 		armor = Mathf.Max (armor - dmgOnArmor, 0f);
 		if (damage <= 0f)
 		{
@@ -58,16 +61,6 @@ public abstract class UnitHealth : MonoBehaviour {
 
 		//Damage on Health
 		health -= damage;
-		UpdateDisplay ();
-		if (health <= 0f)
-		{
-			DestroyUnit ();
-		}
-	}
-
-	public  void EnvDamage (float amount)
-	{
-		
 	}
 
 	public abstract void DestroyUnit ();

@@ -10,6 +10,9 @@ public class GameController : MonoBehaviour {
 	//Game SlowUpdate Duration
 	public float slowUpdateDuration = 0.5f;
 
+	//Game Blaze Damage per Seconds
+	public float blazeDamage = 5f;
+
 	//PU return to follow after player move X distance
 	public float folReturnDist = 1f;
 

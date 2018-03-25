@@ -26,7 +26,7 @@ public class UnitStateController : MonoBehaviour {
 	//SlowUpdate
 	private float nextSlowUpdate = 0f;
 
-	void Update ()
+	public void UpdateState ()
 	{
 		currentState.StateBehavior (unit);
 	}

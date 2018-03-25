@@ -13,6 +13,7 @@ public class GameUnit : MonoBehaviour {
 	[HideInInspector] public UnitHealth health;
 	[HideInInspector] public UnitController controller;
 	[HideInInspector] public UnitStateController stateC;
+	[HideInInspector] public UnitConditionManager condM;
 	[HideInInspector] public NavMeshAgent agent;
 	[HideInInspector] public SphereCollider triggerCollider;
 
@@ -35,6 +36,8 @@ public class GameUnit : MonoBehaviour {
 		{
 			stateC.unit = this;
 		}
+		condM = GetComponent<UnitConditionManager> ();
+		condM.unit = this;
 
 		//Load unit from UnitRef
 		if (preset != null && loadRefValues)
@@ -43,6 +46,15 @@ public class GameUnit : MonoBehaviour {
 		}
 		health.InitializeHealth ();
 		controller.InitializeController ();
+	}
+
+	void Update ()
+	{
+		condM.UpdateConditions ();
+		if (stateC != null)
+		{
+			stateC.UpdateState ();
+		}
 	}
 
 	//Where an hit fx appear when the unit is attacked
