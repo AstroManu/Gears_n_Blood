@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowFriendlyFire: 1
   abilityEvents:
-  - startTime: 1
+  - startTime: 0
     endTime: 2
     eventPosition: {fileID: 11400000, guid: 9020b922cd85af44ba1d6926ef933619, type: 2}
     eventRotation: {fileID: 11400000, guid: 3e0a96caf43888e44a033ebc1e077251, type: 2}
@@ -21,8 +21,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d7565bd689a672742a39901120959230, type: 2}
     eventInterrupt:
     - {fileID: 11400000, guid: 1a24b65c79030c04ca024b77ac0cc358, type: 2}
-  - startTime: 3
-    endTime: 4
+  - startTime: 2
+    endTime: 3
     eventPosition: {fileID: 11400000, guid: 9020b922cd85af44ba1d6926ef933619, type: 2}
     eventRotation: {fileID: 11400000, guid: 3e0a96caf43888e44a033ebc1e077251, type: 2}
     effect:
@@ -30,10 +30,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 7888cba5f39c209418e71fe22536f51b, type: 2}
     - {fileID: 11400000, guid: 6cabedb0d73d4c94bba98568dbebb61f, type: 2}
     - {fileID: 11400000, guid: 4de29e9184ba7a64899b31bd3a8572c9, type: 2}
-<<<<<<< Updated upstream
+    - {fileID: 11400000, guid: 0cd3e165409775e40a3d624de99280e8, type: 2}
     eventInterrupt:
     - {fileID: 11400000, guid: 1a24b65c79030c04ca024b77ac0cc358, type: 2}
-=======
-    - {fileID: 11400000, guid: bebfa7b4e9eeff74eb93625ab1bbfa0c, type: 2}
-    eventInterrupt: []
->>>>>>> Stashed changes

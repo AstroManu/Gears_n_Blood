@@ -13,6 +13,10 @@ public class UnitConditionManager : MonoBehaviour {
 	public ConditionCall blazeCall;
 	private float blazeEnd = 0f;
 
+	//Slow values
+	public ConditionCall slowCall;
+	private float slowEnd = 0f;
+
 	//Method is called from UnitStateController
 	public void UpdateConditions ()
 	{
@@ -53,7 +57,6 @@ public class UnitConditionManager : MonoBehaviour {
 		if (blazeEnd > Time.time)
 		{
 			unit.health.EnvDamage (unit.gC.blazeDamage * Time.deltaTime);
-			Debug.Log ("Blaze deal " + unit.gC.blazeDamage * Time.deltaTime + " damage");
 			return new ConditionReturn("Blaze", false);
 		}
 		BreakBlaze ();
@@ -62,6 +65,36 @@ public class UnitConditionManager : MonoBehaviour {
 	public void BreakBlaze()
 	{
 		//Stop Blaze Fx
+	}
+	#endregion
+
+	#region Slow
+	//------Slow------------
+	public void InputSlow (float duration, float speedModifier)
+	{
+		float newSlowTime = Time.time + duration;
+		slowEnd = Mathf.Max (slowEnd, newSlowTime);
+		SetSlow (speedModifier);
+		activeCondition["Slow"] = slowCall;
+	}
+	private void SetSlow(float speedModifier)
+	{
+		//Start Slow Fx
+		unit.agent.speed = unit.preset.moveSpeed * speedModifier;
+	}
+	public ConditionReturn ReadSlow()
+	{
+		if (slowEnd > Time.time)
+		{
+			return new ConditionReturn("Slow", false);
+		}
+		BreakSlow ();
+		return new ConditionReturn ("Slow", true);
+	}
+	public void BreakSlow()
+	{
+		//Stop Slow Fx
+		unit.agent.speed = unit.preset.moveSpeed;
 	}
 	#endregion
 }

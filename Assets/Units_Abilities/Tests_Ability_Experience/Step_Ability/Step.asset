@@ -27,27 +27,3 @@ MonoBehaviour:
     effect:
     - {fileID: 11400000, guid: f90ed2ea085580e4287cbbdbd9885d23, type: 2}
     eventInterrupt: []
-  - startTime: 0
-    endTime: 0
-    eventPosition: {fileID: 0}
-    eventRotation: {fileID: 0}
-    effect: []
-    eventInterrupt: []
-  - startTime: 0
-    endTime: 0
-    eventPosition: {fileID: 0}
-    eventRotation: {fileID: 0}
-    effect: []
-    eventInterrupt: []
-  - startTime: 0
-    endTime: 0
-    eventPosition: {fileID: 0}
-    eventRotation: {fileID: 0}
-    effect: []
-    eventInterrupt: []
-  - startTime: 0
-    endTime: 0
-    eventPosition: {fileID: 0}
-    eventRotation: {fileID: 0}
-    effect: []
-    eventInterrupt: []
