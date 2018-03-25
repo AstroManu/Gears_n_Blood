@@ -19,14 +19,13 @@ MonoBehaviour:
   maxShield: 0
   dmgReducArmor: 1
   agentType: -334000983
-  moveSpeed: 10
+  moveSpeed: 4
   moveAccelaration: 50
   moveStoppingDistance: 0.5
   agentPriority: 49
   startState: {fileID: 0}
   colliderRadius: 0.35
   aggroRange: 15
-  attack: {fileID: 0}
   ability: []
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
