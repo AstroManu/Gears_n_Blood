@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d742520af1dd9bb4aa462890dd28edb0, type: 3}
   m_Name: ConditionBlaze_Template
   m_EditorClassIdentifier: 
-  blazeDuration: 2
+  blazeDuration: 3
