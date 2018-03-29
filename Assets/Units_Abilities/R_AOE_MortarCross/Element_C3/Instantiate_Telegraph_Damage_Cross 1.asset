@@ -8,7 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bc8e9965cd4e37418643ea736e67b37, type: 3}
-  m_Name: Damage_DemoLaser
+  m_Script: {fileID: 11500000, guid: 29692e169116e124c86517444473abba, type: 3}
+  m_Name: Instantiate_Telegraph_Damage_Cross 1
   m_EditorClassIdentifier: 
-  damageAmount: 80
+  prefab: {fileID: 1429691522114582, guid: 0160bd40f04d11946a4883fad3be5095, type: 2}
+  offset: {x: 0, y: 0, z: 0.5}

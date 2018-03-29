@@ -9,33 +9,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 389aaf16a439a40498944fa751004381, type: 3}
-  m_Name: TestDigger
+  m_Name: PU_Mortar
   m_EditorClassIdentifier: 
-  unitName: TestDigger
-  unitDescription: PH
+  unitName: Mortier
+  unitDescription: Boom Boom !
   faction: {fileID: 11400000, guid: 7a45c81eb139c9944b53c3c36f4a1549, type: 2}
-  maxHealth: 100
+  maxHealth: 200
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 1
-  agentType: -334000983
+  agentType: 1479372276
   moveSpeed: 5
   moveAccelaration: 50
   moveStoppingDistance: 0.5
   agentPriority: 50
   startState: {fileID: 11400000, guid: e5eca4e52f6c1ba41866a3999c466074, type: 2}
-  colliderRadius: 0.35
+  colliderRadius: 0.6
   aggroRange: 15
   ability:
   - ability: {fileID: 11400000, guid: 0bc726a4449f1334282e680aaaf6f7a8, type: 2}
-    minRange: 0
-    maxRange: 3
-    coolDownDuration: 1.2
+    minRange: 3
+    maxRange: 6
+    coolDownDuration: 1.1
     castLockDuration: 1
-    castAnimIndex: 00000000
-  - ability: {fileID: 11400000, guid: 17a020fc576e33c43b5c23d96a215043, type: 2}
-    minRange: 0
-    maxRange: 12
+    castAnimIndex: 01000000
+  - ability: {fileID: 11400000, guid: b7d44d25e36040c469b647584f6bc510, type: 2}
+    minRange: 3
+    maxRange: 10
     coolDownDuration: 5
     castLockDuration: 1
     castAnimIndex: 01000000

@@ -14,14 +14,14 @@ MonoBehaviour:
   allowFriendlyFire: 1
   abilityEvents:
   - startTime: 0
-    endTime: 1
+    endTime: 0.5
     eventPosition: {fileID: 11400000, guid: 88ef8958ec8438549b1ca926d2114d7b, type: 2}
     eventRotation: {fileID: 11400000, guid: 7314d0f78b2228942b4a70db0c97ffc9, type: 2}
     effect:
     - {fileID: 11400000, guid: 8bb2709fe0c480b4bb2b3035da49c54d, type: 2}
     eventInterrupt: []
-  - startTime: 1
-    endTime: 1.3
+  - startTime: 0.6
+    endTime: 1
     eventPosition: {fileID: 11400000, guid: 88ef8958ec8438549b1ca926d2114d7b, type: 2}
     eventRotation: {fileID: 11400000, guid: 7314d0f78b2228942b4a70db0c97ffc9, type: 2}
     effect:

@@ -14,10 +14,10 @@ MonoBehaviour:
   unitName: TestHostile
   unitDescription: PH
   faction: {fileID: 11400000, guid: 600bae9a360d30647ab409b13ff2629e, type: 2}
-  maxHealth: 100
-  maxArmor: 10
-  maxShield: 15
-  dmgReducArmor: 1
+  maxHealth: 400
+  maxArmor: 0
+  maxShield: 0
+  dmgReducArmor: 0
   agentType: -334000983
   moveSpeed: 6
   moveAccelaration: 50
@@ -28,10 +28,16 @@ MonoBehaviour:
   aggroRange: 15
   ability:
   - ability: {fileID: 11400000, guid: 84f679c04389d6c4eadd13c4a6722b46, type: 2}
-    minRange: 3
+    minRange: 2
     maxRange: 10
     coolDownDuration: 4
-    castLockDuration: 4
+    castLockDuration: 6
+    castAnimIndex: 00000000
+  - ability: {fileID: 11400000, guid: 7f669eeab747a7e4fba997f5868e721d, type: 2}
+    minRange: 0
+    maxRange: 0
+    coolDownDuration: 4
+    castLockDuration: 6
     castAnimIndex: 00000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
