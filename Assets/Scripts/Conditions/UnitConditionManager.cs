@@ -17,6 +17,11 @@ public class UnitConditionManager : MonoBehaviour {
 	public ConditionCall slowCall;
 	private float slowEnd = 0f;
 
+	//Taunt values
+	public ConditionCall tauntCall;
+	private float tauntEnd = 0f;
+	[HideInInspector] public GameUnit tauntAggroTarget;
+
 	//Method is called from UnitStateController
 	public void UpdateConditions ()
 	{
@@ -95,6 +100,35 @@ public class UnitConditionManager : MonoBehaviour {
 	{
 		//Stop Slow Fx
 		unit.agent.speed = unit.preset.moveSpeed;
+	}
+	#endregion
+
+	#region Taunt
+	public void InputTaunt (float duration, GameUnit tauntTarget)
+	{
+		float newTauntTime = Time.time + duration;
+		tauntEnd = Mathf.Max (tauntEnd, newTauntTime);
+		SetTaunt (tauntTarget);
+		activeCondition["Taunt"] = tauntCall;
+	}
+	private void SetTaunt (GameUnit tauntTarget)
+	{
+		//Start Taunt Fx
+		tauntAggroTarget = tauntTarget;
+	}
+	public ConditionReturn ReadTaunt ()
+	{
+		if (tauntEnd > Time.time && tauntAggroTarget != null)
+		{
+			return new ConditionReturn("Taunt", false);
+		}
+		BreakTaunt ();
+		return new ConditionReturn ("Taunt", true);
+	}
+	public void BreakTaunt ()
+	{
+		//Stop Taunt Fx
+		tauntAggroTarget = null;
 	}
 	#endregion
 }

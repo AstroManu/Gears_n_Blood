@@ -3667,6 +3667,7 @@ MonoBehaviour:
   attackTargetState: {fileID: 11400000, guid: 0d7bcce3267afcc4ab856ea2bf94e62a, type: 2}
   forceMoveState: {fileID: 11400000, guid: f9f60a83e93662c4b8a61772764c45c4, type: 2}
   castGroundState: {fileID: 11400000, guid: 61272579b026c3945b9bbdb85cf25024, type: 2}
+  castTargetState: {fileID: 11400000, guid: e43f1d2c475ce6f47bebf5a03875da8d, type: 2}
   timePressed: 0
 --- !u!114 &114287844493559414
 MonoBehaviour:
@@ -3975,6 +3976,7 @@ MonoBehaviour:
   attackTargetState: {fileID: 11400000, guid: 0d7bcce3267afcc4ab856ea2bf94e62a, type: 2}
   forceMoveState: {fileID: 11400000, guid: f9f60a83e93662c4b8a61772764c45c4, type: 2}
   castGroundState: {fileID: 11400000, guid: 61272579b026c3945b9bbdb85cf25024, type: 2}
+  castTargetState: {fileID: 11400000, guid: e43f1d2c475ce6f47bebf5a03875da8d, type: 2}
   timePressed: 0
 --- !u!114 &114366502803762572
 MonoBehaviour:
@@ -4131,6 +4133,7 @@ MonoBehaviour:
   attackTargetState: {fileID: 11400000, guid: 0d7bcce3267afcc4ab856ea2bf94e62a, type: 2}
   forceMoveState: {fileID: 11400000, guid: f9f60a83e93662c4b8a61772764c45c4, type: 2}
   castGroundState: {fileID: 11400000, guid: 61272579b026c3945b9bbdb85cf25024, type: 2}
+  castTargetState: {fileID: 11400000, guid: e43f1d2c475ce6f47bebf5a03875da8d, type: 2}
   timePressed: 0
 --- !u!114 &114404448934074728
 MonoBehaviour:
@@ -4699,6 +4702,8 @@ MonoBehaviour:
   unit: {fileID: 0}
   blazeCall: {fileID: 11400000, guid: 0eaa71e4d363e264ca89f29a280b748f, type: 2}
   slowCall: {fileID: 11400000, guid: ece15facb42c8b0428b7a866a787ca11, type: 2}
+  tauntCall: {fileID: 11400000, guid: 3af25196f802e65478449f851479d9c2, type: 2}
+  tauntAggroTarget: {fileID: 0}
 --- !u!114 &114544510998923198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4838,6 +4843,8 @@ MonoBehaviour:
   unit: {fileID: 0}
   blazeCall: {fileID: 11400000, guid: 0eaa71e4d363e264ca89f29a280b748f, type: 2}
   slowCall: {fileID: 11400000, guid: ece15facb42c8b0428b7a866a787ca11, type: 2}
+  tauntCall: {fileID: 11400000, guid: 3af25196f802e65478449f851479d9c2, type: 2}
+  tauntAggroTarget: {fileID: 0}
 --- !u!114 &114587662792994070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6064,6 +6071,8 @@ MonoBehaviour:
   unit: {fileID: 0}
   blazeCall: {fileID: 11400000, guid: 0eaa71e4d363e264ca89f29a280b748f, type: 2}
   slowCall: {fileID: 11400000, guid: ece15facb42c8b0428b7a866a787ca11, type: 2}
+  tauntCall: {fileID: 11400000, guid: 3af25196f802e65478449f851479d9c2, type: 2}
+  tauntAggroTarget: {fileID: 0}
 --- !u!114 &114891831500570912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6386,6 +6395,8 @@ MonoBehaviour:
   unit: {fileID: 0}
   blazeCall: {fileID: 11400000, guid: 0eaa71e4d363e264ca89f29a280b748f, type: 2}
   slowCall: {fileID: 11400000, guid: ece15facb42c8b0428b7a866a787ca11, type: 2}
+  tauntCall: {fileID: 11400000, guid: 3af25196f802e65478449f851479d9c2, type: 2}
+  tauntAggroTarget: {fileID: 0}
 --- !u!114 &114955777577500752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6463,6 +6474,7 @@ MonoBehaviour:
   attackTargetState: {fileID: 11400000, guid: 0d7bcce3267afcc4ab856ea2bf94e62a, type: 2}
   forceMoveState: {fileID: 11400000, guid: f9f60a83e93662c4b8a61772764c45c4, type: 2}
   castGroundState: {fileID: 11400000, guid: 61272579b026c3945b9bbdb85cf25024, type: 2}
+  castTargetState: {fileID: 11400000, guid: e43f1d2c475ce6f47bebf5a03875da8d, type: 2}
   timePressed: 0
 --- !u!114 &114973775140924470
 MonoBehaviour:
@@ -6505,6 +6517,8 @@ MonoBehaviour:
   unit: {fileID: 0}
   blazeCall: {fileID: 11400000, guid: 0eaa71e4d363e264ca89f29a280b748f, type: 2}
   slowCall: {fileID: 11400000, guid: ece15facb42c8b0428b7a866a787ca11, type: 2}
+  tauntCall: {fileID: 11400000, guid: 3af25196f802e65478449f851479d9c2, type: 2}
+  tauntAggroTarget: {fileID: 0}
 --- !u!114 &114977803889638802
 MonoBehaviour:
   m_ObjectHideFlags: 1

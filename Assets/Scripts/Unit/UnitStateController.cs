@@ -36,6 +36,12 @@ public class UnitStateController : MonoBehaviour {
 	//Find all available targets in Radius
 	public void AcquireTarget (Vector3 center, float radius, LayerMask lookForLayer)
 	{
+		if (unit.condM.tauntAggroTarget != null)
+		{
+			currentTarget = unit.condM.tauntAggroTarget;
+			return;
+		}
+
 		List<TargetUnit> targets = new List<TargetUnit>();
 		Collider[] targetsFound = Physics.OverlapSphere (center, radius, lookForLayer);
 		if (targetsFound.Length <= 0)

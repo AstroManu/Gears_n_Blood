@@ -15,6 +15,7 @@ public class PUController : UnitController {
 	public AI_State attackTargetState;
 	public AI_State forceMoveState;
 	public AI_State castGroundState;
+	public AI_State castTargetState;
 
 	[HideInInspector] public float timePressed = 0f;
 
@@ -66,6 +67,12 @@ public class PUController : UnitController {
 	{
 		worldTarget = pos;
 		unit.stateC.nextState = castGroundState;
+	}
+
+	public void SetStateCastTarget (GameUnit lockedTarget)
+	{
+		unit.stateC.nextState = castTargetState;
+		unit.stateC.cmdTarget = lockedTarget;
 	}
 
 	public override void ReportCast (int castedAbility)

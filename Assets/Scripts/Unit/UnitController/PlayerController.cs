@@ -158,9 +158,20 @@ public class PlayerController : UnitController {
 	#region SquadInput
 	public void SquadInputSimple (int squadIndex, float timePressed)
 	{
+		NavMeshHit sampleHit;
+
 		if (timePressed >= inputLongPress)
 		{
-			squad [squadIndex].SetStateCastGround (cursor.transform.position);
+			if (lockedTarget != null)
+			{
+				squad [squadIndex].SetStateCastTarget (lockedTarget);
+				return;
+			}
+
+			if (NavMesh.SamplePosition (cursor.transform.position, out sampleHit, 1f, squad[squadIndex].unit.agent.areaMask))
+			{
+				squad [squadIndex].SetStateCastGround (cursor.transform.position);
+			}
 			return;
 		}
 
@@ -171,7 +182,11 @@ public class PlayerController : UnitController {
 				squad [squadIndex].SetStateAttackTarget (lockedTarget);
 				return;
 			}
-			squad [squadIndex].SetStateAttackMove (cursor.transform.position);
+
+			if (NavMesh.SamplePosition (cursor.transform.position, out sampleHit, 1f, squad[squadIndex].unit.agent.areaMask))
+			{
+				squad [squadIndex].SetStateAttackMove (cursor.transform.position);
+			}
 			return;
 		}
 
