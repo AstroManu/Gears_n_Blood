@@ -12,6 +12,7 @@ public class PUController : UnitController {
 
 	public AI_State followState;
 	public AI_State attackMoveState;
+	public AI_State attackTargetState;
 	public AI_State forceMoveState;
 	public AI_State castGroundState;
 
@@ -19,7 +20,6 @@ public class PUController : UnitController {
 
 	public override void InitializeController ()
 	{
-		unit = gameObject.GetComponent<GameUnit> ();
 		player = ReInput.players.GetPlayer (playerName);
 		unit.spriteC.SetUnitColor (squadColor);
 	}
@@ -48,6 +48,12 @@ public class PUController : UnitController {
 	{
 		worldTarget = pos;
 		unit.stateC.nextState = attackMoveState;
+	}
+
+	public void SetStateAttackTarget (GameUnit lockedTarget)
+	{
+		unit.stateC.nextState = attackTargetState;
+		unit.stateC.cmdTarget = lockedTarget;
 	}
 
 	public void SetStateForceMove (Vector3 pos)

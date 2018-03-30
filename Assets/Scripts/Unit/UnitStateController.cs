@@ -9,6 +9,8 @@ public class UnitStateController : MonoBehaviour {
 	public AI_State currentState;
 	public AI_State nextState;
 
+	[HideInInspector] public GameUnit cmdTarget;
+
 	//Follow Position
 	public Transform followPosition;
 	[HideInInspector] public Vector3 followPosMemory;

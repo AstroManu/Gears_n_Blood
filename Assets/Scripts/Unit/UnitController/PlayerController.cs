@@ -7,18 +7,22 @@ using Rewired;
 
 public class PlayerController : UnitController {
 
+	//Player movement
 	public float playerSpeed = 5f;
 	public float playerSmoothTime = 20f;
 
 	public PUController[] squad;
 
+	//Squads follow positions
 	public Transform followPositions;
 	public float followMoveOffset = 1f;
 
+	//Smooth ref values
 	private Vector3 playerVelocity;
 	private Vector3 playerRefVelocity;
 	private Vector3 playerTargetVelocity = Vector3.zero;
 
+	//Cursor
 	public Transform cursor;
 	public float cursorRange = 15f;
 	public float cursorSmoothTime = 15f;
@@ -28,16 +32,21 @@ public class PlayerController : UnitController {
 
 	public float inputLongPress = 1f;
 
+	//Cursor UI
 	public SpriteRenderer cursorSprite;
 	public Color cursorDefaultColor;
 	public Image castUI;
 	public CanvasGroup castCG;
+	public GameObject cursorLockUI;
+
+	//Cursor Target-lock
+	public LayerMask canLockCursorOn;
+	[HideInInspector] public GameUnit lockedTarget;
 
 	[HideInInspector] public NavMeshAgent agent;
 
 	public override void InitializeController ()
 	{
-		unit = gameObject.GetComponent<GameUnit> ();
 		player = ReInput.players.GetPlayer (playerName);
 		agent = unit.agent;
 		agent.updateRotation = false;
@@ -63,6 +72,7 @@ public class PlayerController : UnitController {
 			followPositions.localPosition = Vector3.zero;
 
 			cursorTargetPosition = (new Vector3 (vX * cursorRange, 0f, vY * cursorRange));
+			CheckCursorLock ();
 			staySnapped = false;
 		}
 		else
@@ -72,6 +82,7 @@ public class PlayerController : UnitController {
 
 			cursorTargetPosition = Vector3.zero;
 			float distanceToPlayer = (cursor.localPosition.x * cursor.localPosition.x) + (cursor.localPosition.y * cursor.localPosition.y);
+			lockedTarget = null;
 			if (distanceToPlayer <= 0.1f)
 			{
 				staySnapped = true;
@@ -84,6 +95,7 @@ public class PlayerController : UnitController {
 		agent.velocity = Vector3.SmoothDamp (agent.velocity, playerTargetVelocity, ref playerRefVelocity, Time.deltaTime * playerSmoothTime);
 	}
 
+	#region Cursor
 	void MoveCursor ()
 	{
 		if (!staySnapped)
@@ -96,10 +108,37 @@ public class PlayerController : UnitController {
 		}
 	}
 
+	void CheckCursorLock ()
+	{
+		List<TargetUnit> targets = new List<TargetUnit>();
+		Collider[] targetsFound = Physics.OverlapSphere (cursor.position, 1f, canLockCursorOn);
+		if (targetsFound.Length <= 0)
+		{
+			lockedTarget = null;
+			return;
+		}
+
+		foreach (Collider col in targetsFound)
+		{
+			GameUnit target = col.transform.GetComponent<GameUnit>();
+			targets.Add (new TargetUnit (target, LockValue (target)));
+		}
+		targets.Sort ();
+		lockedTarget = targets [0].unit;
+	}
+
+	private float LockValue (GameUnit aggroTarget)
+	{
+		Vector3 distVector = cursor.position - aggroTarget.transform.position;
+		return 0f - (distVector.x * distVector.x + distVector.z * distVector.z);
+	}
+
 	void CursorUI ()
 	{
 		float pressedTime = 0f;
 		cursorSprite.color = cursorDefaultColor;
+
+		cursorLockUI.SetActive (lockedTarget != null);
 
 		foreach (PUController pUC in squad)
 		{
@@ -114,7 +153,9 @@ public class PlayerController : UnitController {
 		castUI.fillAmount = castLerpValue;
 		castCG.alpha = castLerpValue - 0.3f;
 	}
+	#endregion
 
+	#region SquadInput
 	public void SquadInputSimple (int squadIndex, float timePressed)
 	{
 		if (timePressed >= inputLongPress)
@@ -125,6 +166,11 @@ public class PlayerController : UnitController {
 
 		if (player.GetButton ("CmdTrigger"))
 		{
+			if (lockedTarget != null)
+			{
+				squad [squadIndex].SetStateAttackTarget (lockedTarget);
+				return;
+			}
 			squad [squadIndex].SetStateAttackMove (cursor.transform.position);
 			return;
 		}
@@ -136,6 +182,7 @@ public class PlayerController : UnitController {
 	{
 		squad [squadIndex].SetStateForceMove (cursor.transform.position);
 	}
+	#endregion
 
 	public override void ReportCast (int castedAbility)
 	{

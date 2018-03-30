@@ -25066,6 +25066,7 @@ MonoBehaviour:
   unit: {fileID: 0}
   currentState: {fileID: 0}
   nextState: {fileID: 0}
+  cmdTarget: {fileID: 0}
   followPosition: {fileID: 0}
   followPosMemory: {x: 0, y: 0, z: 0}
   currentTarget: {fileID: 0}
