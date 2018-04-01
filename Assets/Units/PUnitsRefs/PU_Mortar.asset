@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389aaf16a439a40498944fa751004381, type: 3}
   m_Name: PU_Mortar
   m_EditorClassIdentifier: 
-  unitName: Mortier
-  unitDescription: Boom Boom !
+  unitName: Mortar
+  unitDescription: Fragile unit capable of raining destruction at long range
   faction: {fileID: 11400000, guid: 7a45c81eb139c9944b53c3c36f4a1549, type: 2}
   maxHealth: 200
   maxArmor: 0
