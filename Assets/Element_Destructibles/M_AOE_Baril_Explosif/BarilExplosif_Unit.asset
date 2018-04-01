@@ -14,7 +14,7 @@ MonoBehaviour:
   unitName: BarilExplosif
   unitDescription: PH
   faction: {fileID: 11400000, guid: 600bae9a360d30647ab409b13ff2629e, type: 2}
-  maxHealth: 10
+  maxHealth: 100
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0
@@ -23,18 +23,12 @@ MonoBehaviour:
   moveAccelaration: 0
   moveStoppingDistance: 0
   agentPriority: 25
-  startState: {fileID: 11400000, guid: 88fc9017831fcaf48bd215ddf0959ab2, type: 2}
+  startState: {fileID: 0}
   colliderRadius: 0.35
   aggroRange: 0
-  ability:
-  - ability: {fileID: 11400000, guid: b140e07a2efa01e4caff75ef8d1b339a, type: 2}
-    minRange: 0
-    maxRange: 0
-    coolDownDuration: 0
-    castLockDuration: 0
-    castAnimIndex: 00000000
+  ability: []
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
   spritePrefab: {fileID: 1429691522114582, guid: 061ddfa69e300324ea4e39e7b1ea2f95,
     type: 2}
-  deathFx: {fileID: 11400000, guid: 0125c52ff73ebfa49991ca18fc3ace42, type: 2}
+  deathFx: {fileID: 11400000, guid: b140e07a2efa01e4caff75ef8d1b339a, type: 2}
