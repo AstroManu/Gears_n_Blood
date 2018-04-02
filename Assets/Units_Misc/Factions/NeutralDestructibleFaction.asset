@@ -9,18 +9,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f73133977feae7141a0099fc84d5f21e, type: 3}
-  m_Name: PlayerFaction
+  m_Name: NeutralDestructibleFaction
   m_EditorClassIdentifier: 
-  layerName: Faction PlayerCharacter
+  layerName: Faction NeutralDestructible
   friendly:
     serializedVersion: 2
-    m_Bits: 2785280
+    m_Bits: 178958336
   aggro:
     serializedVersion: 2
-    m_Bits: 8388608
+    m_Bits: 0
   canHit:
     serializedVersion: 2
-    m_Bits: 176168960
+    m_Bits: 178946048
   friendlyFire:
     serializedVersion: 2
     m_Bits: 178958336

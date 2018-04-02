@@ -17,10 +17,10 @@ MonoBehaviour:
     m_Bits: 176160768
   aggro:
     serializedVersion: 2
-    m_Bits: 163840
+    m_Bits: 2260992
   canHit:
     serializedVersion: 2
-    m_Bits: 2269184
+    m_Bits: 2793472
   friendlyFire:
     serializedVersion: 2
     m_Bits: 178958336

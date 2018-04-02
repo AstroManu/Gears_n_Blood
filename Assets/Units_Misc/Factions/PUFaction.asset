@@ -20,7 +20,7 @@ MonoBehaviour:
     m_Bits: 8388608
   canHit:
     serializedVersion: 2
-    m_Bits: 142614528
+    m_Bits: 176168960
   friendlyFire:
     serializedVersion: 2
     m_Bits: 178958336

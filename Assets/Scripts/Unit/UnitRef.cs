@@ -55,12 +55,15 @@ public class UnitRef : ScriptableObject {
 		gameUnit.health.shield = maxShield;
 
 		//Navmesh Agent Generation
-		gameUnit.agent.agentTypeID = agentType;
-		gameUnit.agent.speed = moveSpeed;
-		gameUnit.agent.acceleration = moveAccelaration;
-		gameUnit.agent.stoppingDistance = moveStoppingDistance;
-		gameUnit.agent.avoidancePriority = agentPriority;
-		gameUnit.agent.radius = colliderRadius;
+		if (gameUnit.agent != null)
+		{
+			gameUnit.agent.agentTypeID = agentType;
+			gameUnit.agent.speed = moveSpeed;
+			gameUnit.agent.acceleration = moveAccelaration;
+			gameUnit.agent.stoppingDistance = moveStoppingDistance;
+			gameUnit.agent.avoidancePriority = agentPriority;
+			gameUnit.agent.radius = colliderRadius;
+		}
 
 		//Sprite Generation
 		GameObject spriteRoot = Instantiate (spritePrefab, gameUnit.transform.position, Quaternion.identity);
@@ -70,7 +73,10 @@ public class UnitRef : ScriptableObject {
 		//gameUnit.spriteC.target = gameUnit.transform;
 
 		//Starting AI State
-		startState.InitializeState (gameUnit);
+		if (startState != null)
+		{
+			startState.InitializeState (gameUnit);
+		}
 
 		//Trigger Collider
 		gameUnit.triggerCollider.radius = colliderRadius;
