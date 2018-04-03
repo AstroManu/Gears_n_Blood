@@ -10,6 +10,7 @@ public class SpriteController : MonoBehaviour {
 	private float nextFaceUpdate = 0f;
 	public SpriteRenderer[] coloredSprite;
 
+	public bool idleOverriden = false;
 	[HideInInspector] public bool moveRight = true;
 
 	public void InitializeSpriteC (GameUnit unit)
@@ -37,11 +38,17 @@ public class SpriteController : MonoBehaviour {
 
 		if (target.position == transform.position)
 		{
-			anim.SetBool ("IsMoving", false);
+			if (!idleOverriden)
+			{
+				anim.SetBool ("IsMoving", false);
+			}
 		}
 		else
 		{
-			anim.SetBool ("IsMoving", true);
+			if (!idleOverriden)
+			{
+				anim.SetBool ("IsMoving", true);
+			}
 			//moveRight = transform.position.x <= target.transform.position.x;
 			moveRight = UpdateFaceRight();
 			transform.position = target.position;
@@ -80,9 +87,14 @@ public class SpriteController : MonoBehaviour {
 	{
 		if (Time.time >= nextFaceUpdate)
 		{
-			nextFaceUpdate = Time.time + 0.5f;
+			nextFaceUpdate = Time.time + 0.3f;
 			return transform.position.x <= target.transform.position.x;
 		}
 		return moveRight;
+	}
+
+	public void UpdateOverridenIdle (bool moving)
+	{
+		anim.SetBool ("IsMoving", moving);
 	}
 }

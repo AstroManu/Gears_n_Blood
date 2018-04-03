@@ -14,6 +14,10 @@ public class SpriteMover : MonoBehaviour {
 
 	void Update ()
 	{
+		if (target == null)
+		{
+			return;
+		}
 		transform.position = target.position;
 		//int pos = Mathf.RoundToInt (transform.position.z * 2f);
 		//sR.sortingOrder = (pos * -1);

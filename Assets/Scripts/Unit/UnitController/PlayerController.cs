@@ -50,6 +50,8 @@ public class PlayerController : UnitController {
 		player = ReInput.players.GetPlayer (playerName);
 		agent = unit.agent;
 		agent.updateRotation = false;
+		unit.spriteC.InitializeSpriteC (unit);
+		unit.spriteC.AnimIdleMove ();
 	}
 
 
@@ -62,6 +64,7 @@ public class PlayerController : UnitController {
 		MovePlayer ();
 		MoveCursor ();
 		CursorUI ();
+		unit.spriteC.faceDirection (unit.spriteC.moveRight);
 	}
 
 	void PlayerInput (bool cmdMode, float vX, float vY)
@@ -93,6 +96,7 @@ public class PlayerController : UnitController {
 	void MovePlayer ()
 	{
 		agent.velocity = Vector3.SmoothDamp (agent.velocity, playerTargetVelocity, ref playerRefVelocity, Time.deltaTime * playerSmoothTime);
+		unit.spriteC.UpdateOverridenIdle (agent.velocity.magnitude > 0.2f);
 	}
 
 	#region Cursor

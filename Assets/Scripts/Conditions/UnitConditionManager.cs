@@ -85,7 +85,10 @@ public class UnitConditionManager : MonoBehaviour {
 	private void SetSlow(float speedModifier)
 	{
 		//Start Slow Fx
-		unit.agent.speed = unit.preset.moveSpeed * speedModifier;
+		if (unit.agent != null)
+		{
+			unit.agent.speed = unit.preset.moveSpeed * speedModifier;
+		}
 	}
 	public ConditionReturn ReadSlow()
 	{
@@ -99,7 +102,10 @@ public class UnitConditionManager : MonoBehaviour {
 	public void BreakSlow()
 	{
 		//Stop Slow Fx
-		unit.agent.speed = unit.preset.moveSpeed;
+		if (unit.agent != null)
+		{
+			unit.agent.speed = unit.preset.moveSpeed;
+		}
 	}
 	#endregion
 
