@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: BarilExplosif
   unitDescription: PH
-  faction: {fileID: 11400000, guid: 600bae9a360d30647ab409b13ff2629e, type: 2}
-  maxHealth: 100
+  faction: {fileID: 11400000, guid: c2c2efaaa7e48e64f9c36fc90827e00e, type: 2}
+  maxHealth: 40
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0

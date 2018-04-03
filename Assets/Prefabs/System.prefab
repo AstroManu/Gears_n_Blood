@@ -2868,7 +2868,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 14
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3458,7 +3458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b462eb91400e44a1c674859fde9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preset: {fileID: 11400000, guid: 8c315beb48755544bb4aa47653afdc45, type: 2}
+  preset: {fileID: 11400000, guid: fac3dbaa5a27f064bb74ff239f4d7485, type: 2}
   loadRefValues: 1
   gC: {fileID: 0}
   health: {fileID: 0}
@@ -5276,7 +5276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b462eb91400e44a1c674859fde9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preset: {fileID: 11400000, guid: a09881de53b6b1348bacbf8246ac7aa9, type: 2}
+  preset: {fileID: 11400000, guid: dfe13509a58b00f4595c0cec37ddd5c4, type: 2}
   loadRefValues: 1
   gC: {fileID: 0}
   health: {fileID: 0}
@@ -5324,7 +5324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b462eb91400e44a1c674859fde9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preset: {fileID: 11400000, guid: 218db217ae37dd542b888bca537cf8f9, type: 2}
+  preset: {fileID: 11400000, guid: 1e8c276918c08481581894ff473231cd, type: 2}
   loadRefValues: 1
   gC: {fileID: 0}
   health: {fileID: 0}
@@ -5707,7 +5707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b462eb91400e44a1c674859fde9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preset: {fileID: 11400000, guid: cb7a75a3171a40a4a898f19995bfd2e0, type: 2}
+  preset: {fileID: 11400000, guid: 218db217ae37dd542b888bca537cf8f9, type: 2}
   loadRefValues: 1
   gC: {fileID: 0}
   health: {fileID: 0}

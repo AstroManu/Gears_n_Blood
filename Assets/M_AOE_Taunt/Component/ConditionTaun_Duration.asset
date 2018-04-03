@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1ad35d110c1894eb283e6c280c26bc, type: 3}
   m_Name: ConditionTaun_Duration
   m_EditorClassIdentifier: 
-  tauntDuration: 1
+  tauntDuration: 10

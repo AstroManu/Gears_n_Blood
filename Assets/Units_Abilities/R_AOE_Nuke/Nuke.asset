@@ -18,14 +18,14 @@ MonoBehaviour:
     eventPosition: {fileID: 11400000, guid: 88ef8958ec8438549b1ca926d2114d7b, type: 2}
     eventRotation: {fileID: 11400000, guid: 7314d0f78b2228942b4a70db0c97ffc9, type: 2}
     effect:
-    - {fileID: 11400000, guid: fe8a9c9e57092d542a925c389db22fa8, type: 2}
+    - {fileID: 11400000, guid: ef8ab79d719e9d54d8ef811d80609087, type: 2}
     eventInterrupt: []
   - startTime: 4
     endTime: 5
     eventPosition: {fileID: 11400000, guid: 88ef8958ec8438549b1ca926d2114d7b, type: 2}
     eventRotation: {fileID: 11400000, guid: 7314d0f78b2228942b4a70db0c97ffc9, type: 2}
     effect:
-    - {fileID: 11400000, guid: a69497a0701f7a64ab918f2418867d08, type: 2}
-    - {fileID: 11400000, guid: 634350c0b3783094f95b571ba80bba72, type: 2}
-    - {fileID: 11400000, guid: 753d68f54c952f94f99d5bcbd68d4a02, type: 2}
+    - {fileID: 11400000, guid: 9c41510ce19a4e042a9e9c897ad3fb2f, type: 2}
+    - {fileID: 11400000, guid: caa01ce6afd99b7438fc5b93d1d35021, type: 2}
+    - {fileID: 11400000, guid: 3c1fc779854bc9b47b1b49d67112c481, type: 2}
     eventInterrupt: []
