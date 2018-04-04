@@ -7,38 +7,38 @@ using UnityEngine.AI;
 public class UnitRef : ScriptableObject {
 
 	[Header("Identifier")]
-	public string unitName = "New Unit";
-	public string unitDescription = "Description";
-	public FactionPreset faction;
+	[Tooltip ("Ingame name of the unit")] public string unitName = "New Unit";
+	[Tooltip ("Ingame description of the unit")][TextArea (2, 10)] public string unitDescription = "Description";
+	[Tooltip ("Faction reference of the unit")] public FactionPreset faction;
 
 	[Header("Health stats")]
-	public float maxHealth = 100f;
-	public float maxArmor = 0f;
-	public float maxShield = 0f;
-	public float dmgReducArmor = 1f;
+	[Tooltip ("Max amount of health points")] public float maxHealth = 100f;
+	[Tooltip ("Max amount of armor points")] public float maxArmor = 0f;
+	[Tooltip ("Max amount of shield points")] public float maxShield = 0f;
+	[Tooltip ("How much damage points is removed from each hit on armor")] public float dmgReducArmor = 1f;
 
 	[HideInInspector] public int agentType = 0;
 	[Header("Movement")]
-	public float moveSpeed = 10f;
-	public float moveAccelaration = 50f;
-	public float moveStoppingDistance = 0.5f;
-	public int agentPriority = 50;
-	public AI_State startState;
+	[Tooltip ("How fast the unit move. PU should have at least 0.5 speed more than the commander")] public float moveSpeed = 10f;
+	[Tooltip ("Don't touch this. Override agent accelaration")] public float moveAccelaration = 50f;
+	[Tooltip ("Don't touch this. Override agent stopping distance")] public float moveStoppingDistance = 0.5f;
+	[Tooltip ("Higher value units cannot push lower value units. PU = 50, Commander = 49, EU = 40, Unmovable = 25")]public int agentPriority = 50;
+	[Tooltip ("Don't touch this. Start AI_State. PU should use Follow_Follow")] public AI_State startState;
 
 	//Size Stats
 	[HideInInspector] public float colliderRadius = 0.5f;
 
 	[Header("Abilities")]
-	public float aggroRange = 15f;
-	public UnitAbility[] ability;
+	[Tooltip ("How far the unit will look for target")] public float aggroRange = 15f;
+	[Tooltip ("Abilites of the Unit. PU should always have 2 abilites: 1 attack + 1 cast ability")] public UnitAbility[] ability;
 
 	[Header("Hit FX area")]
-	public Vector3 hitAreaCenter = new Vector3 (0f, 0f, 1f);
-	public float hitAreaRadius = 0.5f;
+	[Tooltip ("Offset from unit position where hit fx will appear")] public Vector3 hitAreaCenter = new Vector3 (0f, 0f, 1f);
+	[Tooltip ("Radius in which hit fx can randomly be placed")] public float hitAreaRadius = 0.5f;
 
 	[Header("Visuals")]
-	public GameObject spritePrefab;
-	public Ability deathFx;
+	[Tooltip ("Prefab of the unit visual aspect. Must have a SpriteController on root.")] public GameObject spritePrefab;
+	[Tooltip ("An ability that is casted at the unit location upon destruction. Most units will spawn an animated death fx.")] public Ability deathFx;
 
 	//Take ref values and create the unit
 	public void LoadUnitFromRef (GameUnit gameUnit)

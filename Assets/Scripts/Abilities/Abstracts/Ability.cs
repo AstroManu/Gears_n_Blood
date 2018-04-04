@@ -4,10 +4,13 @@ using UnityEngine;
 
 [CreateAssetMenu (fileName = "New Ability", menuName = "Abilities/New Ability", order = 36)]
 public class Ability : ScriptableObject {
-	
-	public bool allowFriendlyFire = false;
 
-	public AbilityEvent[] abilityEvents; 
+	[Tooltip ("Ingame name of the ability")] public string abilityName = "New Ability";
+	[Tooltip ("Ingame description of the ability")] [TextArea (2, 10)] public string abilityDescription = "Description";
+
+	[Tooltip ("If true, event will also acquire friendly targets from GameUnit's faction")] public bool allowFriendlyFire = false;
+
+	[Tooltip ("Ability will spawn an EventObject for each AbilityEvent")] public AbilityEvent[] abilityEvents; 
 
 	public void Cast (GameUnit caster, Vector3 target)
 	{

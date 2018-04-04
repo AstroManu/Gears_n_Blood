@@ -6,17 +6,17 @@ public class UnitStateController : MonoBehaviour {
 
 	[HideInInspector] public GameUnit unit;
 
-	public AI_State currentState;
-	public AI_State nextState;
+	[Tooltip ("Don't touch this")] public AI_State currentState;
+	[Tooltip ("Don't touch this")] public AI_State nextState;
 
 	[HideInInspector] public GameUnit cmdTarget;
 
 	//Follow Position
-	public Transform followPosition;
+	[Tooltip ("Don't touch this. Transform that will be followed during Follow AI_States. PU only.")] public Transform followPosition;
 	[HideInInspector] public Vector3 followPosMemory;
 
 	//Target
-	public GameUnit currentTarget;
+	[Tooltip ("Don't touch this")] public GameUnit currentTarget;
 	[HideInInspector] public float distanceToTarget = 0f;
 
 	//Abilities

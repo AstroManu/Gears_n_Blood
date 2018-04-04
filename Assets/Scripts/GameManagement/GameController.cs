@@ -5,16 +5,16 @@ using UnityEngine;
 public class GameController : MonoBehaviour {
 
 	//Reference to parent for all sprites
-	public Transform spritesParent;
+	[Tooltip ("Don't touch this. Root for all in-world visual fx")] public Transform spritesParent;
 
 	//Game SlowUpdate Duration
-	public float slowUpdateDuration = 0.5f;
+	[Tooltip ("Don't touch this. Ever. Duration of the AI SlowUpdate.")] public float slowUpdateDuration = 0.5f;
 
 	//Game Blaze Damage per Seconds
-	public float blazeDamage = 5f;
+	[Tooltip ("Amount of damage blaze deal every second")] public float blazeDamage = 5f;
 
 	//PU return to follow after player move X distance
-	public float folReturnDist = 1f;
+	[Tooltip ("Don't touch this. Ever.")] public float folReturnDist = 1f;
 
 
 	void Awake ()

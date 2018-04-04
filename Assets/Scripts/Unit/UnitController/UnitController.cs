@@ -5,7 +5,7 @@ using Rewired;
 
 public abstract class UnitController : MonoBehaviour {
 
-	public string playerName;
+	[Tooltip ("Don't touch this. Rewired player")] public string playerName;
 	[HideInInspector] public Player player;
 
 	[HideInInspector] public GameUnit unit;

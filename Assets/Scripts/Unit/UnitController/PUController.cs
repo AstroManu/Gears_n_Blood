@@ -5,17 +5,17 @@ using Rewired;
 
 public class PUController : UnitController {
 
-	public string squadKey;
-	public int squadIndex;
-	public PlayerController pC;
-	public Color squadColor;
+	[Tooltip ("Don't touch this. Rewired action associated with unit")] public string squadKey;
+	[Tooltip ("Don't touch this. Position in the squad array of the PlayerController")] public int squadIndex;
+	[Tooltip ("Don't touch this")] public PlayerController pC;
+	[Tooltip ("Don't touch this. Color of the unit")] public Color squadColor;
 
-	public AI_State followState;
-	public AI_State attackMoveState;
-	public AI_State attackTargetState;
-	public AI_State forceMoveState;
-	public AI_State castGroundState;
-	public AI_State castTargetState;
+	[Tooltip ("Don't touch this")] public AI_State followState;
+	[Tooltip ("Don't touch this")] public AI_State attackMoveState;
+	[Tooltip ("Don't touch this")] public AI_State attackTargetState;
+	[Tooltip ("Don't touch this")] public AI_State forceMoveState;
+	[Tooltip ("Don't touch this")] public AI_State castGroundState;
+	[Tooltip ("Don't touch this")] public AI_State castTargetState;
 
 	[HideInInspector] public float timePressed = 0f;
 

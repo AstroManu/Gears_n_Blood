@@ -6,12 +6,12 @@ public abstract class UnitHealth : MonoBehaviour {
 
 	[HideInInspector] public GameUnit unit;
 
-	public float maxHealth;
-	public float health;
-	public float maxArmor;
-	public float armor;
-	public float maxShield;
-	public float shield;
+	[Tooltip ("Don't touch this unless the unit doesn't load UnitRef")] public float maxHealth;
+	[Tooltip ("Don't touch this unless the unit doesn't load UnitRef")] public float health;
+	[Tooltip ("Don't touch this unless the unit doesn't load UnitRef")] public float maxArmor;
+	[Tooltip ("Don't touch this unless the unit doesn't load UnitRef")] public float armor;
+	[Tooltip ("Don't touch this unless the unit doesn't load UnitRef")] public float maxShield;
+	[Tooltip ("Don't touch this unless the unit doesn't load UnitRef")] public float shield;
 
 	public abstract void InitializeHealth ();
 

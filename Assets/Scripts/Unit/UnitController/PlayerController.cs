@@ -8,14 +8,14 @@ using Rewired;
 public class PlayerController : UnitController {
 
 	//Player movement
-	public float playerSpeed = 5f;
-	public float playerSmoothTime = 20f;
+	[Tooltip ("Commander max speed. Must be 0.5 slower than slowest PU")] public float playerSpeed = 5f;
+	[Tooltip ("Don't touch this. Lower values will accelarate/decelerate faster")] public float playerSmoothTime = 20f;
 
-	public PUController[] squad;
+	[Tooltip ("Don't touch this. Length should be 4, with a reference to each PU")] public PUController[] squad;
 
 	//Squads follow positions
-	public Transform followPositions;
-	public float followMoveOffset = 1f;
+	[Tooltip ("Don't touch this")] public Transform followPositions;
+	[Tooltip ("Don't touch this")] public float followMoveOffset = 1f;
 
 	//Smooth ref values
 	private Vector3 playerVelocity;
@@ -23,24 +23,24 @@ public class PlayerController : UnitController {
 	private Vector3 playerTargetVelocity = Vector3.zero;
 
 	//Cursor
-	public Transform cursor;
-	public float cursorRange = 15f;
-	public float cursorSmoothTime = 15f;
+	[Tooltip ("Don't touch this")] public Transform cursor;
+	[Tooltip ("How far the cursor will go if joystick is pushed all the way")] public float cursorRange = 15f;
+	[Tooltip ("Lower values will make the cursor react faster to input")] public float cursorSmoothTime = 15f;
 	private Vector3 cursorTargetPosition = Vector3.zero;
 	private bool staySnapped = true;
 	private Vector3 cursorRefVelocity;
 
-	public float inputLongPress = 1f;
+	[Tooltip ("How long the squad button must be pressed to cast ability")] public float inputLongPress = 1f;
 
 	//Cursor UI
-	public SpriteRenderer cursorSprite;
-	public Color cursorDefaultColor;
-	public Image castUI;
-	public CanvasGroup castCG;
-	public GameObject cursorLockUI;
+	[Tooltip ("Don't touch this")] public SpriteRenderer cursorSprite;
+	[Tooltip ("Cursor color")] public Color cursorDefaultColor;
+	[Tooltip ("Don't touch this")] public Image castUI;
+	[Tooltip ("Don't touch this")] public CanvasGroup castCG;
+	[Tooltip ("Don't touch this")] public GameObject cursorLockUI;
 
 	//Cursor Target-lock
-	public LayerMask canLockCursorOn;
+	[Tooltip ("Don't touch this")] public LayerMask canLockCursorOn;
 	[HideInInspector] public GameUnit lockedTarget;
 
 	[HideInInspector] public NavMeshAgent agent;

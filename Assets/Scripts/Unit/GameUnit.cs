@@ -5,7 +5,9 @@ using UnityEngine.AI;
 
 public class GameUnit : MonoBehaviour {
 
+	[Tooltip("Unit template")]
 	public UnitRef preset;
+	[Tooltip("Should the values of the UnitRef override the unit on start? True for most units, false for commander.")]
 	public bool loadRefValues = true;
 
 	[HideInInspector] public GameController gC;
@@ -17,6 +19,7 @@ public class GameUnit : MonoBehaviour {
 	[HideInInspector] public NavMeshAgent agent;
 	[HideInInspector] public SphereCollider triggerCollider;
 
+	[Tooltip("The visual aspect of the unit. Must be pre-referenced only if Load Ref Values is disabled")]
 	public SpriteController spriteC;
 
 	void Start ()

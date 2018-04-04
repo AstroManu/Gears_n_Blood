@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PUHealth : UnitHealth {
 
-	public UiSquadDisplay squadDisplay;
+	[Tooltip ("HUD display of the PU")] public UiSquadDisplay squadDisplay;
 
 	public override void InitializeHealth()
 	{

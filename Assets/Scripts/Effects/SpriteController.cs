@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class SpriteController : MonoBehaviour {
 
-	public Transform target;
+	[Tooltip ("Transform of the unit")] public Transform target;
 	private Animator anim;
 	//private SpriteRenderer sR;
 	private float nextFaceUpdate = 0f;
-	public SpriteRenderer[] coloredSprite;
+	[Tooltip ("Reference to all sprite children that must be colored with the unit color on start")] public SpriteRenderer[] coloredSprite;
 
-	public bool idleOverriden = false;
+	[Tooltip ("Don't touch this. Set to true for the commander")] public bool idleOverriden = false;
 	[HideInInspector] public bool moveRight = true;
 
 	public void InitializeSpriteC (GameUnit unit)

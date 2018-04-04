@@ -10,15 +10,15 @@ public class UnitConditionManager : MonoBehaviour {
 	public Dictionary<string, ConditionCall> activeCondition = new Dictionary<string, ConditionCall>();
 
 	//Blaze values
-	public ConditionCall blazeCall;
+	[Tooltip ("Must have the corresponding ConditionCall")] public ConditionCall blazeCall;
 	private float blazeEnd = 0f;
 
 	//Slow values
-	public ConditionCall slowCall;
+	[Tooltip ("Must have the corresponding ConditionCall")] public ConditionCall slowCall;
 	private float slowEnd = 0f;
 
 	//Taunt values
-	public ConditionCall tauntCall;
+	[Tooltip ("Must have the corresponding ConditionCall")] public ConditionCall tauntCall;
 	private float tauntEnd = 0f;
 	[HideInInspector] public GameUnit tauntAggroTarget;
 
