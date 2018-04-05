@@ -11,6 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713d08dfe3511ca49acbd8d84788c58c, type: 3}
   m_Name: M_AOE_Flamethrower
   m_EditorClassIdentifier: 
+  abilityName: New Ability
+  abilityDescription: Description
   allowFriendlyFire: 0
   abilityEvents:
   - startTime: 0
