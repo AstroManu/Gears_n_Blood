@@ -7,8 +7,8 @@ public class AbRota_LookFromTarget : AbilityRotation {
 
 	public override void eventRotation (GameUnit caster, Vector3 target, Transform ev)
 	{
-		ev.LookAt (target);
-		ev.rotation = Quaternion.Inverse (ev.rotation);
+		Vector3 inversePosition = (ev.position - target) + ev.position;
+		ev.LookAt (inversePosition, Vector3.up);
 	}
 
 }
