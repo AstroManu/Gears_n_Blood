@@ -29,6 +29,10 @@ MonoBehaviour:
   ability: []
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
+<<<<<<< Updated upstream:Assets/Units/Element_Destructibles/M_AOE_Baril_Explosif/ContExplosif_Unit.asset
   spritePrefab: {fileID: 1923424410237814, guid: c93b38822b6c34a86bbb7253bc244b07,
+=======
+  spritePrefab: {fileID: 1916259896012000, guid: f4186f6a318af364993e713281ed3005,
+>>>>>>> Stashed changes:Assets/Units/Element_Destructibles/M_AOE_Baril_Explosif/BarilExplosif_Unit.asset
     type: 2}
   deathFx: {fileID: 11400000, guid: b140e07a2efa01e4caff75ef8d1b339a, type: 2}
