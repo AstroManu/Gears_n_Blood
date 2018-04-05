@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: LerpBetweenCastAndTarget 1
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: 0}
-  lerpValue: 0.5
+  lerpValue: 1.5

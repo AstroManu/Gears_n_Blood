@@ -28,8 +28,8 @@ GameObject:
   - component: {fileID: 135158481736317020}
   m_Layer: 0
   m_Name: Boss_DroneFabricator
-  m_TagString: Killerbot
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_TagString: Drone Fabricator
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1864764194861904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.247406, y: -0.8266366, z: -6.2155046}
+  m_LocalPosition: {x: -3.9, y: -0.8266366, z: 20.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec8b462eb91400e44a1c674859fde9b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preset: {fileID: 11400000, guid: 119de50e6cf856b4793707e42f4a7cbb, type: 2}
+  preset: {fileID: 11400000, guid: a405d07f0469e284da40a9b7c9f07a02, type: 2}
   loadRefValues: 1
   gC: {fileID: 0}
   health: {fileID: 0}
@@ -95,7 +95,7 @@ MonoBehaviour:
   unit: {fileID: 0}
   blazeCall: {fileID: 11400000, guid: 0eaa71e4d363e264ca89f29a280b748f, type: 2}
   slowCall: {fileID: 11400000, guid: ece15facb42c8b0428b7a866a787ca11, type: 2}
-  tauntCall: {fileID: 0}
+  tauntCall: {fileID: 11400000, guid: 3af25196f802e65478449f851479d9c2, type: 2}
   tauntAggroTarget: {fileID: 0}
 --- !u!114 &114516585903860626
 MonoBehaviour:
