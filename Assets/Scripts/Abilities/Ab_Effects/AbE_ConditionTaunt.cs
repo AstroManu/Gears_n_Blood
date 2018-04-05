@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu (fileName = "ConditionTaunt_Template", menuName = "Abilities/Effects/C Taunt", order = 37)]
 public class AbE_ConditionTaunt : AbilityEffect {
 
-	public float tauntDuration = 1f;
+	[Tooltip("Duration of taunt in second. New taunt will completly override previous taunt effects.")] public float tauntDuration = 1f;
 
 	public override void DoEffect (GameUnit caster, Vector3 target, LayerMask canHit, EventCaster eventCaster)
 	{

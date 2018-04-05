@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu (fileName = "GetTargets_Template", menuName = "Abilities/Effects/Get Targets", order = 37)]
 public class AbE_GetTargets : AbilityEffect {
 
-	public EffectSearch searchPattern;
+	[Tooltip("First pass to acquire a list of targets.")] public EffectSearch searchPattern;
 	public EffectSearchFilter searchFilter;
 
 	public override void DoEffect (GameUnit caster, Vector3 target, LayerMask canHit, EventCaster eventCaster)

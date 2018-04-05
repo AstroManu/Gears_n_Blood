@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 389aaf16a439a40498944fa751004381, type: 3}
-  m_Name: EU_Mine
+  m_Name: PObject_Mine
   m_EditorClassIdentifier: 
-  unitName: TestSniper
+  unitName: Mine
   unitDescription: PH
-  faction: {fileID: 11400000, guid: 7a45c81eb139c9944b53c3c36f4a1549, type: 2}
+  faction: {fileID: 11400000, guid: 286c300982e0cbe43a70140d1a857ba6, type: 2}
   maxHealth: 100
   maxArmor: 0
   maxShield: 0
@@ -23,7 +23,7 @@ MonoBehaviour:
   moveAccelaration: 0
   moveStoppingDistance: 0
   agentPriority: 0
-  startState: {fileID: 11400000, guid: e5eca4e52f6c1ba41866a3999c466074, type: 2}
+  startState: {fileID: 11400000, guid: 4283fa0f96cb80e4f92097665afa9948, type: 2}
   colliderRadius: 0.35
   aggroRange: 15
   ability:
@@ -32,7 +32,7 @@ MonoBehaviour:
     maxRange: 0
     coolDownDuration: 0
     castLockDuration: 0
-    castAnimIndex: 00000000
+    castAnimIndex: 01000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
   spritePrefab: {fileID: 1199879447677284, guid: 4a6291aef90bb524190ce542ead4a5f6,
