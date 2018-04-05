@@ -18,13 +18,13 @@ MonoBehaviour:
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0
-  agentType: -334000983
+  agentType: -902729914
   moveSpeed: 0
   moveAccelaration: 0
   moveStoppingDistance: 0
   agentPriority: 0
   startState: {fileID: 11400000, guid: cd0705b73c2b648419f2cd33b6142bfe, type: 2}
-  colliderRadius: 0.35
+  colliderRadius: 1.2
   aggroRange: 15
   ability:
   - ability: {fileID: 11400000, guid: 1c25ef3ad4968124f9c6d6f93ea58deb, type: 2}
@@ -41,6 +41,6 @@ MonoBehaviour:
     castAnimIndex: 00000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
-  spritePrefab: {fileID: 1916259896012000, guid: 3dad98be84bf67e4e82f1c2d71b18c7d,
+  spritePrefab: {fileID: 1721264696680672, guid: 41efe5a02bb7b43c9985f06824761058,
     type: 2}
   deathFx: {fileID: 11400000, guid: 0125c52ff73ebfa49991ca18fc3ace42, type: 2}
