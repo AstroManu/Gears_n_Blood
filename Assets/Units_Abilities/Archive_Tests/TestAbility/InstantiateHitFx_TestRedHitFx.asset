@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6c6f1948e4eb54a9982d34dd9bb098, type: 3}
   m_Name: InstantiateHitFx_TestRedHitFx
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1208149636671432, guid: a487b208f7c2c9242b8199b90e632444, type: 2}
+  prefab: {fileID: 1691887740483810, guid: b9d63cb5a1c5e6b4eb1b5c3306cfe5aa, type: 2}

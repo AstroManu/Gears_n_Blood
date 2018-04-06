@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29692e169116e124c86517444473abba, type: 3}
   m_Name: Instantiate_TestRedFx
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1208149636671432, guid: a487b208f7c2c9242b8199b90e632444, type: 2}
+  prefab: {fileID: 1340254943232844, guid: 8fc726203090c954897adcfd5d102f2b, type: 2}
   offset: {x: 0, y: 0, z: 0}
