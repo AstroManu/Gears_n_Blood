@@ -17,12 +17,29 @@ public class PUController : UnitController {
 	[Tooltip ("Don't touch this")] public AI_State castGroundState;
 	[Tooltip ("Don't touch this")] public AI_State castTargetState;
 
+	[Tooltip ("Don't touch this")] public OrderUIBehavior followUI;
+	[Tooltip ("Don't touch this")] public OrderUIBehavior moveUI;
+	[Tooltip ("Don't touch this")] public OrderUIBehavior attackMoveUI;
+	[Tooltip ("Don't touch this")] public OrderUIBehavior attackUI;
+	[Tooltip ("Don't touch this")] public OrderUIBehavior castGroundUI;
+	[Tooltip ("Don't touch this")] public OrderUIBehavior castTargetUI;
+	[Tooltip ("Don't touch this")] public Animator orderObject;
+	[Tooltip ("Don't touch this")] public SpriteRenderer orderSprite;
+	[Tooltip ("Don't touch this")] public Vector3 followPositionUIOffset;
+	private OrderUIBehavior activeOrderUI;
+
+
 	[HideInInspector] public float timePressed = 0f;
+	[HideInInspector] public bool castHasBeenReported = false;
+
 
 	public override void InitializeController ()
 	{
 		player = ReInput.players.GetPlayer (playerName);
 		unit.spriteC.SetUnitColor (squadColor);
+		orderSprite.color = squadColor;
+		activeOrderUI = followUI;
+		activeOrderUI.InitializeUI (this);
 	}
 
 	void Update ()
@@ -38,45 +55,60 @@ public class PUController : UnitController {
 		}
 
 		timePressed = player.GetButtonTimePressed (squadKey);
+
+		activeOrderUI.UIBehavior (this);
+		castHasBeenReported = false;
 	}
 
 	public void SetStateFollow ()
 	{
 		unit.stateC.nextState = followState;
+		activeOrderUI = followUI;
+		activeOrderUI.InitializeUI (this);
 	}
 
 	public void SetStateAttackMove (Vector3 pos)
 	{
 		worldTarget = pos;
 		unit.stateC.nextState = attackMoveState;
+		activeOrderUI = attackMoveUI;
+		activeOrderUI.InitializeUI (this);
 	}
 
 	public void SetStateAttackTarget (GameUnit lockedTarget)
 	{
 		unit.stateC.nextState = attackTargetState;
 		unit.stateC.cmdTarget = lockedTarget;
+		activeOrderUI = attackUI;
+		activeOrderUI.InitializeUI (this);
 	}
 
 	public void SetStateForceMove (Vector3 pos)
 	{
 		worldTarget = pos;
 		unit.stateC.nextState = forceMoveState;
+		activeOrderUI = moveUI;
+		activeOrderUI.InitializeUI (this);
 	}
 
 	public void SetStateCastGround (Vector3 pos)
 	{
 		worldTarget = pos;
 		unit.stateC.nextState = castGroundState;
+		activeOrderUI = castGroundUI;
+		activeOrderUI.InitializeUI (this);
 	}
 
 	public void SetStateCastTarget (GameUnit lockedTarget)
 	{
 		unit.stateC.nextState = castTargetState;
 		unit.stateC.cmdTarget = lockedTarget;
+		activeOrderUI = castTargetUI;
+		activeOrderUI.InitializeUI (this);
 	}
 
 	public override void ReportCast (int castedAbility)
 	{
-		
+		castHasBeenReported = true;
 	}
 }
