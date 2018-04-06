@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29692e169116e124c86517444473abba, type: 3}
   m_Name: Instantiate_Flamethrower
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1271610685779122, guid: 6ac1dff4fd440d64c90c971f8141b0ae, type: 2}
+  prefab: {fileID: 1542196480667258, guid: d8bf68002204dab46be1e9989cae7b2e, type: 2}
   offset: {x: 0, y: 0, z: 0}
