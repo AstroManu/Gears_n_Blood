@@ -9,30 +9,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 389aaf16a439a40498944fa751004381, type: 3}
-  m_Name: ObstacleMetal
+  m_Name: Destructible_MetalDebris
   m_EditorClassIdentifier: 
-  unitName: TestHostile
-  unitDescription: PH
+  unitName: Metal Debris
+  unitDescription: Destructible metal debris
   faction: {fileID: 11400000, guid: c2c2efaaa7e48e64f9c36fc90827e00e, type: 2}
-  maxHealth: 100
+  maxHealth: 200
   maxArmor: 0
   maxShield: 0
-  dmgReducArmor: 0
-  agentType: -334000983
-  moveSpeed: 0
-  moveAccelaration: 0
-  moveStoppingDistance: 0
+  dmgReducArmor: 1
+  agentType: 1479372276
+  moveSpeed: 5
+  moveAccelaration: 50
+  moveStoppingDistance: 0.5
   agentPriority: 25
   startState: {fileID: 0}
-  colliderRadius: 0.35
-  aggroRange: 0
+  colliderRadius: 0.6
+  aggroRange: 15
   ability: []
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
-<<<<<<< Updated upstream:Assets/Units/Element_Destructibles/ObstacleMetal/ObstacleMetal.asset
   spritePrefab: {fileID: 1923424410237814, guid: 5c2e1e94ad66b4dd3b88cecc98ad07af,
-=======
-  spritePrefab: {fileID: 1916259896012000, guid: f089a40833bd1cb4380a80433ee57ed1,
->>>>>>> Stashed changes:Assets/Units/Element_Destructibles/Mur/Obstacle.asset
     type: 2}
   deathFx: {fileID: 11400000, guid: 0125c52ff73ebfa49991ca18fc3ace42, type: 2}
