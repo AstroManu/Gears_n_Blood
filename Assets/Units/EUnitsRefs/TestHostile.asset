@@ -18,20 +18,20 @@ MonoBehaviour:
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0
-  agentType: -334000983
+  agentType: -902729914
   moveSpeed: 6
   moveAccelaration: 50
   moveStoppingDistance: 0.5
   agentPriority: 50
   startState: {fileID: 11400000, guid: cd0705b73c2b648419f2cd33b6142bfe, type: 2}
-  colliderRadius: 0.35
+  colliderRadius: 1.2
   aggroRange: 15
   ability:
   - ability: {fileID: 11400000, guid: 84f679c04389d6c4eadd13c4a6722b46, type: 2}
     minRange: 2
     maxRange: 12
-    coolDownDuration: 4
-    castLockDuration: 6
+    coolDownDuration: 3
+    castLockDuration: 2.5
     castAnimIndex: 00000000
   - ability: {fileID: 0}
     minRange: 0

@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cb4c1b376f315d43a30d0de1eb4b569, type: 3}
   m_Name: BoxSearch_DemoLaser
   m_EditorClassIdentifier: 
-  boxRadius: {x: 0.75, y: 6, z: 6}
+  boxRadius: {x: 0.75, y: 13, z: 13}
   canHitCaster: 0
