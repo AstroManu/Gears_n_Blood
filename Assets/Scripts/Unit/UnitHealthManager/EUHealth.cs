@@ -6,7 +6,7 @@ public class EUHealth : UnitHealth {
 
 	public override void InitializeHealth ()
 	{
-		
+		unit.spriteC.HealthUI.InitializeDisplay (maxArmor > 0f, maxShield > 0f);
 	}
 
 	public override void DestroyUnit ()
@@ -18,6 +18,9 @@ public class EUHealth : UnitHealth {
 
 	public override void UpdateDisplay ()
 	{
-
+		float healthFill = Mathf.InverseLerp (0f, unit.health.maxHealth, unit.health.health);
+		float armorFill = Mathf.InverseLerp (0f, unit.health.maxArmor, unit.health.armor);
+		float shieldFill = Mathf.InverseLerp (0f, unit.health.maxShield, unit.health.shield);
+		unit.spriteC.HealthUI.UpdateDisplay (healthFill, armorFill, shieldFill);
 	}
 }

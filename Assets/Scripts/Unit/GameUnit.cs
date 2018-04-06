@@ -47,8 +47,8 @@ public class GameUnit : MonoBehaviour {
 		{
 			preset.LoadUnitFromRef (this);
 		}
-		health.InitializeHealth ();
 		controller.InitializeController ();
+		health.InitializeHealth ();
 	}
 
 	void Update ()

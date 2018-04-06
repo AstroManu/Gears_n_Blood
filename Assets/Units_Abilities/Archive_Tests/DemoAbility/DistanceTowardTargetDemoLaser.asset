@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2ea696ff8f7fe4c9d2492a39ebf087, type: 3}
   m_Name: DistanceTowardTargetDemoLaser
   m_EditorClassIdentifier: 
-  offset: {x: 0.5, y: 0, z: 5}
+  offset: {x: 0, y: 0, z: 0}
   distance: 13

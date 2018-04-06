@@ -101,7 +101,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  coloredSprite: []
+  idleOverriden: 0
   moveRight: 1
+  healthBarsPrefab: {fileID: 1547069487813742, guid: 1e3b8b5d38a825c42b4d0ce096919172,
+    type: 2}
+  HealthUI: {fileID: 0}
+  healthBarsOffset: {x: 0, y: 0, z: 2.3}
 --- !u!210 &210428324975109974
 SortingGroup:
   m_ObjectHideFlags: 1

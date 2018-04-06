@@ -103,7 +103,12 @@ MonoBehaviour:
   target: {fileID: 0}
   coloredSprite:
   - {fileID: 0}
+  idleOverriden: 0
   moveRight: 1
+  healthBarsPrefab: {fileID: 1547069487813742, guid: 1e3b8b5d38a825c42b4d0ce096919172,
+    type: 2}
+  HealthUI: {fileID: 0}
+  healthBarsOffset: {x: 0, y: 0, z: 2.3}
 --- !u!210 &210192207415412260
 SortingGroup:
   m_ObjectHideFlags: 1

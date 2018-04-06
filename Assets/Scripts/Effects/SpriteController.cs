@@ -13,12 +13,19 @@ public class SpriteController : MonoBehaviour {
 	[Tooltip ("Don't touch this. Set to true for the commander")] public bool idleOverriden = false;
 	[HideInInspector] public bool moveRight = true;
 
+	[Tooltip ("Health UI prefab for the unit")] public GameObject healthBarsPrefab;
+	[HideInInspector] public UnitHealthBars HealthUI;
+	[Tooltip ("Offset of the health display")] public Vector3 healthBarsOffset;
+
+
 	public void InitializeSpriteC (GameUnit unit)
 	{
 		anim = GetComponent<Animator> ();
 		target = unit.transform;
 		AnimIdleMove ();
-		//sR = GetComponentInChildren <SpriteRenderer> ();
+		GameObject healthBarsObject = Instantiate (healthBarsPrefab, transform.parent);
+		HealthUI = healthBarsObject.GetComponent <UnitHealthBars> ();
+		HealthUI.target = this;
 	}
 
 	public void SetUnitColor (Color unitColor)
