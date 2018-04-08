@@ -27,11 +27,11 @@ MonoBehaviour:
   colliderRadius: 1.2
   aggroRange: 15
   ability:
-  - ability: {fileID: 11400000, guid: d7b1276daec3b8448830a530733e617b, type: 2}
+  - ability: {fileID: 11400000, guid: e5d4398d17defd24b8f52c8f59fbd2f6, type: 2}
     minRange: 0
-    maxRange: 2
+    maxRange: 15
     coolDownDuration: 4
-    castLockDuration: 3
+    castLockDuration: 6.5
     castAnimIndex: 00000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5

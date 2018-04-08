@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d2ea696ff8f7fe4c9d2492a39ebf087, type: 3}
-  m_Name: DistanceTowardTarget
+  m_Script: {fileID: 11500000, guid: 638a6039d286ead4ca0f4537219c2c60, type: 3}
+  m_Name: DistanceTowardCaster_Step
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: 0}
-  distance: 6
+  distance: 1
