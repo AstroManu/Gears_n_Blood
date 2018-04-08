@@ -7,7 +7,7 @@ public class AIC_AbilityReady : AI_Condition {
 
 	public override bool Condition (GameUnit unit)
 	{
-		return Time.time >= unit.stateC.nextAbility;
+		return Time.time > unit.stateC.nextAbility;
 	}
 
 }

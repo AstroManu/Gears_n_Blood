@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f73133977feae7141a0099fc84d5f21e, type: 3}
   m_Name: PUntargetableFaction
   m_EditorClassIdentifier: 
-  layerName: Faction PUntargetable
+  layerName: Faction PUntargetables
   friendly:
     serializedVersion: 2
     m_Bits: 2785280

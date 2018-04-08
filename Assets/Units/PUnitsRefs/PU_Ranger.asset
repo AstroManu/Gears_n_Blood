@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389aaf16a439a40498944fa751004381, type: 3}
   m_Name: PU_Ranger
   m_EditorClassIdentifier: 
-  unitName: TestSniper
+  unitName: Ranger
   unitDescription: PH
   faction: {fileID: 11400000, guid: 7a45c81eb139c9944b53c3c36f4a1549, type: 2}
   maxHealth: 100
@@ -33,12 +33,12 @@ MonoBehaviour:
     coolDownDuration: 1.2
     castLockDuration: 1
     castAnimIndex: 00000000
-  - ability: {fileID: 11400000, guid: 27c0d3c95ddfa004caaf358f82a65acc, type: 2}
-    minRange: 0
+  - ability: {fileID: 11400000, guid: d28841fa2e85b064cb236959a1f2fe65, type: 2}
+    minRange: 0.5
     maxRange: 1
-    coolDownDuration: 1
+    coolDownDuration: 10
     castLockDuration: 1
-    castAnimIndex: 02000000
+    castAnimIndex: 01000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
   spritePrefab: {fileID: 1199879447677284, guid: 4a6291aef90bb524190ce542ead4a5f6,

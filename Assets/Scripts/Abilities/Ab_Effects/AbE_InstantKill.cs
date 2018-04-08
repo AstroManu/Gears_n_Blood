@@ -9,7 +9,10 @@ public class AbE_InstantKill : AbilityEffect {
 	{
 		foreach (GameUnit hit in eventCaster.acquiredUnits)
 		{
-			hit.health.DestroyUnit();
+			if (hit != null)
+			{
+				hit.health.DestroyUnit();
+			}
 		}
 	}
 
