@@ -56,6 +56,7 @@ public class UnitConditionManager : MonoBehaviour {
 	private void SetBlaze()
 	{
 		//Start Blaze Fx
+		unit.spriteC.blazeFx.Play();
 	}
 	public ConditionReturn ReadBlaze()
 	{
@@ -70,6 +71,7 @@ public class UnitConditionManager : MonoBehaviour {
 	public void BreakBlaze()
 	{
 		//Stop Blaze Fx
+		unit.spriteC.blazeFx.Stop (true, ParticleSystemStopBehavior.StopEmitting);
 	}
 	#endregion
 
