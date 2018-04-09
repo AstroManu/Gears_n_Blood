@@ -24,6 +24,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 94f8d2f956ebd47438056c10be24bc58, type: 2}
     - {fileID: 11400000, guid: afb902d78c69247489743639d128e6e3, type: 2}
   - condition: {fileID: 11400000, guid: d6617e5c9e0758c4d857271911404e34, type: 2}
-    newState: {fileID: 11400000, guid: 2bc8d871592dd7440acf782ead49108b, type: 2}
+    newState: {fileID: 11400000, guid: 61272579b026c3945b9bbdb85cf25024, type: 2}
     actions:
     - {fileID: 11400000, guid: afb902d78c69247489743639d128e6e3, type: 2}
