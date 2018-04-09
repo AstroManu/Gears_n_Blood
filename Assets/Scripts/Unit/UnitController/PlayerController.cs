@@ -175,7 +175,15 @@ public class PlayerController : UnitController {
 
 			if (NavMesh.SamplePosition (cursor.transform.position, out sampleHit, 1f, squad[squadIndex].unit.agent.areaMask))
 			{
-				squad [squadIndex].SetStateCastGround (cursor.transform.position);
+				if (player.GetButton ("CmdTrigger"))
+				{
+					squad [squadIndex].SetStateCastGround (cursor.transform.position);
+				}
+				else
+				{
+					squad [squadIndex].SetStateCastGround (squad[squadIndex].transform.position - new Vector3 (0f, 0f, 0.001f));
+				}
+
 			}
 			return;
 		}
