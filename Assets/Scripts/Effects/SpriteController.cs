@@ -17,6 +17,7 @@ public class SpriteController : MonoBehaviour {
 	[HideInInspector] public UnitHealthBars HealthUI;
 	[Tooltip ("Offset of the health display")] public Vector3 healthBarsOffset;
 
+	[Tooltip ("Don't touch this. Reference to range display object.")]public RangeDisplay rangeDisplay;
 
 	public void InitializeSpriteC (GameUnit unit)
 	{

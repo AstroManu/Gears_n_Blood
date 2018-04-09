@@ -25094,6 +25094,7 @@ MonoBehaviour:
   playerName: System
   unit: {fileID: 0}
   worldTarget: {x: 0, y: 0, z: 0}
+  abilityTimers: []
 --- !u!114 &1320416599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29791,6 +29792,15 @@ MonoBehaviour:
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
+    - _id: 12
+      _name: DisplayAggroRange
+      _type: 1
+      _descriptiveName: Display aggro range
+      _positiveDescriptiveName: 
+      _negativeDescriptiveName: 
+      _behaviorId: 0
+      _userAssignable: 1
+      _categoryId: 1
     actionCategories:
     - _name: Default
       _descriptiveName: Default
@@ -29817,7 +29827,7 @@ MonoBehaviour:
       - categoryId: 0
         actionIds: 
       - categoryId: 1
-        actionIds: 02000000030000000400000005000000060000000b000000
+        actionIds: 02000000030000000400000005000000060000000b0000000c000000
       - categoryId: 2
         actionIds: 08000000090000000a000000
       - categoryId: 3
@@ -30037,7 +30047,7 @@ MonoBehaviour:
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: 11
+        _actionId: 12
         _elementType: 1
         _elementIdentifierId: 12
         _axisRange: 0
@@ -30963,7 +30973,7 @@ MonoBehaviour:
     customControllerMaps: []
     customControllers: []
     playerIdCounter: 2
-    actionIdCounter: 12
+    actionIdCounter: 13
     actionCategoryIdCounter: 4
     inputBehaviorIdCounter: 1
     mapCategoryIdCounter: 3

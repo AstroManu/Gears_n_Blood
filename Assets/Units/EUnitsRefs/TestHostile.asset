@@ -32,12 +32,22 @@ MonoBehaviour:
     maxRange: 12
     coolDownDuration: 3
     castLockDuration: 2.5
+    abilityUseCondition:
+      timer: 10
+      activeRadius: 15
+      minHealth: 0
+      maxHealth: 1
     castAnimIndex: 00000000
-  - ability: {fileID: 0}
+  - ability: {fileID: 11400000, guid: 0bc726a4449f1334282e680aaaf6f7a8, type: 2}
     minRange: 0
-    maxRange: 0
-    coolDownDuration: 4
-    castLockDuration: 6
+    maxRange: 15
+    coolDownDuration: 3
+    castLockDuration: 2
+    abilityUseCondition:
+      timer: 0
+      activeRadius: 1
+      minHealth: 0
+      maxHealth: 1
     castAnimIndex: 00000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5

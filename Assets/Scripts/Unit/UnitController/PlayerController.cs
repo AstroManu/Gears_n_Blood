@@ -64,6 +64,7 @@ public class PlayerController : UnitController {
 		MovePlayer ();
 		MoveCursor ();
 		CursorUI ();
+		SquadAbilityRangeDisplay ();
 		unit.spriteC.faceDirection (unit.spriteC.moveRight);
 	}
 
@@ -200,6 +201,18 @@ public class PlayerController : UnitController {
 	public void SquadInputDouble (int squadIndex)
 	{
 		squad [squadIndex].SetStateForceMove (cursor.transform.position);
+	}
+
+	public void SquadAbilityRangeDisplay ()
+	{
+		foreach (PUController pUC in squad)
+		{
+			if (pUC != null)
+			{
+				float castLerpValue = Mathf.InverseLerp (0f, inputLongPress, pUC.timePressed);
+				pUC.unit.spriteC.rangeDisplay.SetColor (new Color (pUC.squadColor.r, pUC.squadColor.g, pUC.squadColor.b, castLerpValue - 0.3f));
+			}
+		}
 	}
 	#endregion
 

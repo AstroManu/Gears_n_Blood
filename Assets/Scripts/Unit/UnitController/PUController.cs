@@ -40,6 +40,8 @@ public class PUController : UnitController {
 		orderSprite.color = squadColor;
 		activeOrderUI = followUI;
 		activeOrderUI.InitializeUI (this);
+		unit.spriteC.rangeDisplay.SetDisplay (unit.preset.ability [1].maxRange);
+		unit.spriteC.rangeDisplay.gameObject.SetActive (true);
 	}
 
 	void Update ()
