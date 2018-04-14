@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu (fileName = "LerpBetweenCastAndTarget", menuName = "Abilities/Positions/Lerp Between Cast and Target", order = 37)]
+[CreateAssetMenu (fileName = "LerpBetweenCastAndTarget", menuName = "Abilities/Positions/Lerp between Cast and Target", order = 37)]
 public class AbPos_LerpBetweenCastAndTarget : AbilityPosition {
 
 	public float lerpValue = 0.5f;

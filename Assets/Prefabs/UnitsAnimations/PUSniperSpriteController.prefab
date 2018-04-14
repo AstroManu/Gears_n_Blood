@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1325957962458012}
   m_IsPrefabParent: 1
+--- !u!1 &1136383536437326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4982277887021428}
+  m_Layer: 0
+  m_Name: ShotSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1325957962458012
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,6 +157,7 @@ Transform:
   - {fileID: 4751093617736798}
   - {fileID: 4882032853192890}
   - {fileID: 4826258133472036}
+  - {fileID: 4982277887021428}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -226,6 +242,19 @@ Transform:
   m_Father: {fileID: 4464775449012348}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &4982277887021428
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136383536437326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4464775449012348}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &95696283815413718
 Animator:
   serializedVersion: 3
@@ -273,6 +302,7 @@ MonoBehaviour:
   coloredSprite: []
   idleOverriden: 0
   moveRight: 1
+  shotSpawn: {fileID: 4982277887021428}
   blazeFx: {fileID: 198246743256278732}
   healthBarsPrefab: {fileID: 1547069487813742, guid: 1e3b8b5d38a825c42b4d0ce096919172,
     type: 2}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5a7e859008b184ba360fff6e7cd489, type: 3}
+  m_Name: Projectile_MetalBolt
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1372294762510464, guid: d02a721023a17f348acda8040c55a4c6,
+    type: 2}
+  hitFxPrefab: {fileID: 1608141040355574, guid: 1b61a7ba0bb2fcc47804908aada3cbaf,
+    type: 2}
+  projectileSpeed: 25
+  damageAmount: 10
+  blazeDuration: 0
+  slowDuration: 5
+  slowModifier: 0.4
+  tauntDuration: 0
