@@ -39,10 +39,10 @@ MonoBehaviour:
       maxHealth: 1
     castAnimIndex: 01000000
   - ability: {fileID: 11400000, guid: c679d1d5b0216bb4cb1698434efa28b6, type: 2}
-    minRange: 2
+    minRange: 0
     maxRange: 10
     coolDownDuration: 5
-    castLockDuration: 1
+    castLockDuration: 2
     abilityUseCondition:
       timer: 0
       activeRadius: 10

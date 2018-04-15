@@ -25,12 +25,12 @@ MonoBehaviour:
   agentPriority: 50
   startState: {fileID: 11400000, guid: e5eca4e52f6c1ba41866a3999c466074, type: 2}
   colliderRadius: 0.35
-  aggroRange: 15
+  aggroRange: 10
   ability:
   - ability: {fileID: 11400000, guid: 366df71d970b8d74394415adc829bd10, type: 2}
     minRange: 2
-    maxRange: 8
-    coolDownDuration: 1.1
+    maxRange: 10
+    coolDownDuration: 1
     castLockDuration: 1
     abilityUseCondition:
       timer: 0

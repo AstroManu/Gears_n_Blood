@@ -14,17 +14,17 @@ MonoBehaviour:
   unitName: Metal Debris
   unitDescription: Destructible metal debris
   faction: {fileID: 11400000, guid: c2c2efaaa7e48e64f9c36fc90827e00e, type: 2}
-  maxHealth: 200
+  maxHealth: 50
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 1
-  agentType: 1479372276
+  agentType: -902729914
   moveSpeed: 5
   moveAccelaration: 50
   moveStoppingDistance: 0.5
   agentPriority: 25
   startState: {fileID: 0}
-  colliderRadius: 0.6
+  colliderRadius: 1.2
   aggroRange: 15
   ability: []
   hitAreaCenter: {x: 0, y: 0, z: 1}

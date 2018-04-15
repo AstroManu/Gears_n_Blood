@@ -11,6 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713d08dfe3511ca49acbd8d84788c58c, type: 3}
   m_Name: M_AOE_Taunt
   m_EditorClassIdentifier: 
+  abilityName: New Ability
+  abilityDescription: Description
   allowFriendlyFire: 0
   abilityEvents:
   - startTime: 1
@@ -20,7 +22,5 @@ MonoBehaviour:
     effect:
     - {fileID: 11400000, guid: 58b2ba78d6209cd49aac3c2a76089c62, type: 2}
     - {fileID: 11400000, guid: 3d30d816def647b459ae3624824f3707, type: 2}
-    - {fileID: 11400000, guid: ef8ab79d719e9d54d8ef811d80609087, type: 2}
-    - {fileID: 11400000, guid: f7e096df1f9ebf64ba639d7b1f58b3d2, type: 2}
-    - {fileID: 11400000, guid: f7e096df1f9ebf64ba639d7b1f58b3d2, type: 2}
+    - {fileID: 11400000, guid: 763703f024cbcf44e85678fc8db41e7f, type: 2}
     eventInterrupt: []
