@@ -19,7 +19,7 @@ MonoBehaviour:
   maxShield: 0
   dmgReducArmor: 1
   agentType: -334000983
-  moveSpeed: 5
+  moveSpeed: 6
   moveAccelaration: 50
   moveStoppingDistance: 0.5
   agentPriority: 50
@@ -32,12 +32,22 @@ MonoBehaviour:
     maxRange: 3
     coolDownDuration: 1.2
     castLockDuration: 1
+    abilityUseCondition:
+      timer: 0
+      activeRadius: 10
+      minHealth: 0
+      maxHealth: 1
     castAnimIndex: 00000000
   - ability: {fileID: 11400000, guid: 17a020fc576e33c43b5c23d96a215043, type: 2}
     minRange: 0
     maxRange: 12
     coolDownDuration: 5
     castLockDuration: 1
+    abilityUseCondition:
+      timer: 0
+      activeRadius: 10
+      minHealth: 0
+      maxHealth: 1
     castAnimIndex: 01000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
