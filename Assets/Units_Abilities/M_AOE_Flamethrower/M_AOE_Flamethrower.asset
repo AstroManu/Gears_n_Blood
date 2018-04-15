@@ -16,9 +16,9 @@ MonoBehaviour:
   allowFriendlyFire: 0
   abilityEvents:
   - startTime: 0
-    endTime: 1
-    eventPosition: {fileID: 11400000, guid: 79c241f52fbf34f4a83eea65ea26c7c8, type: 2}
-    eventRotation: {fileID: 11400000, guid: 6bea6b68f76a787489f04ae2f15ec24b, type: 2}
+    endTime: 2
+    eventPosition: {fileID: 11400000, guid: 72f56589952625f49aba8cede75a749f, type: 2}
+    eventRotation: {fileID: 11400000, guid: 5751d0ad7f74201408844ff53f470396, type: 2}
     effect:
     - {fileID: 11400000, guid: 44d039898434e47f8b9009dd10b25950, type: 2}
     - {fileID: 11400000, guid: 298dc1626cbb44783ae8b4509fb105f2, type: 2}
