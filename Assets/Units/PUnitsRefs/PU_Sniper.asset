@@ -27,9 +27,9 @@ MonoBehaviour:
   colliderRadius: 0.35
   aggroRange: 15
   ability:
-  - ability: {fileID: 11400000, guid: 63e674cd949802d43a8935570540efeb, type: 2}
+  - ability: {fileID: 11400000, guid: fd88b70df24a52f41add2addcf7f59e4, type: 2}
     minRange: 2
-    maxRange: 8
+    maxRange: 12
     coolDownDuration: 1.2
     castLockDuration: 1
     abilityUseCondition:

@@ -20060,6 +20060,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4086111607583032, guid: ddf2eb758d72aa740a5cb20b551c1d0a,
     type: 2}
   m_PrefabInternal: {fileID: 1036153461}
+--- !u!114 &1043266327 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114932850502501638, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
+    type: 2}
+  m_PrefabInternal: {fileID: 292599230}
+  m_Script: {fileID: 11500000, guid: 38d98e8d96e0ae843a653f1d88722018, type: 3}
 --- !u!1001 &1050862528
 Prefab:
   m_ObjectHideFlags: 0
@@ -28569,6 +28575,48 @@ Transform:
   m_PrefabParentObject: {fileID: 4086111607583032, guid: ddf2eb758d72aa740a5cb20b551c1d0a,
     type: 2}
   m_PrefabInternal: {fileID: 1630730962}
+--- !u!1 &1632057735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1632057737}
+  - component: {fileID: 1632057736}
+  m_Layer: 0
+  m_Name: TestDialogTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1632057736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1632057735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3705e80063cd142a0cc8d63407dd42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dM: {fileID: 1043266327}
+  dA: {fileID: 11400000, guid: f2358a5babc68b54f86d51290f8de678, type: 2}
+--- !u!4 &1632057737
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1632057735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1637859770
 Prefab:
   m_ObjectHideFlags: 0
@@ -29801,6 +29849,24 @@ MonoBehaviour:
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 1
+    - _id: 14
+      _name: Next
+      _type: 1
+      _descriptiveName: Next
+      _positiveDescriptiveName: 
+      _negativeDescriptiveName: 
+      _behaviorId: 0
+      _userAssignable: 1
+      _categoryId: 2
+    - _id: 15
+      _name: Previous
+      _type: 1
+      _descriptiveName: Previous
+      _positiveDescriptiveName: 
+      _negativeDescriptiveName: 
+      _behaviorId: 0
+      _userAssignable: 1
+      _categoryId: 2
     actionCategories:
     - _name: Default
       _descriptiveName: Default
@@ -29829,7 +29895,7 @@ MonoBehaviour:
       - categoryId: 1
         actionIds: 02000000030000000400000005000000060000000b0000000c000000
       - categoryId: 2
-        actionIds: 08000000090000000a000000
+        actionIds: 08000000090000000a0000000e0000000f000000
       - categoryId: 3
         actionIds: 000000000100000007000000
     inputBehaviors:
@@ -30025,7 +30091,7 @@ MonoBehaviour:
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: -1
+        _actionId: 15
         _elementType: 1
         _elementIdentifierId: 10
         _axisRange: 0
@@ -30047,7 +30113,7 @@ MonoBehaviour:
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: 12
+        _actionId: 14
         _elementType: 1
         _elementIdentifierId: 12
         _axisRange: 0
@@ -30285,12 +30351,12 @@ MonoBehaviour:
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: 10
+        _actionId: 15
         _elementType: 1
         _elementIdentifierId: 10
         _axisRange: 0
         _invert: 0
-        _axisContribution: 1
+        _axisContribution: 0
         _keyboardKeyCode: 0
         _modifierKey1: 0
         _modifierKey2: 0
@@ -30307,7 +30373,7 @@ MonoBehaviour:
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: 10
+        _actionId: 14
         _elementType: 1
         _elementIdentifierId: 12
         _axisRange: 0
@@ -30600,6 +30666,28 @@ MonoBehaviour:
         _modifierKey1: 0
         _modifierKey2: 0
         _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 15
+        _elementType: 1
+        _elementIdentifierId: -1
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 113
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 14
+        _elementType: 1
+        _elementIdentifierId: -1
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 101
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
     - id: 2
       categoryId: 2
       layoutId: 1
@@ -30696,18 +30784,18 @@ MonoBehaviour:
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: 10
+        _actionId: 15
         _elementType: 1
         _elementIdentifierId: -1
         _axisRange: 0
         _invert: 0
-        _axisContribution: 1
+        _axisContribution: 0
         _keyboardKeyCode: 113
         _modifierKey1: 0
         _modifierKey2: 0
         _modifierKey3: 0
       - _actionCategoryId: 0
-        _actionId: 10
+        _actionId: 14
         _elementType: 1
         _elementIdentifierId: -1
         _axisRange: 0
@@ -30973,7 +31061,7 @@ MonoBehaviour:
     customControllerMaps: []
     customControllers: []
     playerIdCounter: 2
-    actionIdCounter: 13
+    actionIdCounter: 16
     actionCategoryIdCounter: 4
     inputBehaviorIdCounter: 1
     mapCategoryIdCounter: 3

@@ -9,14 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 389aaf16a439a40498944fa751004381, type: 3}
-  m_Name: PU_Ranger
+  m_Name: PU_Digger
   m_EditorClassIdentifier: 
-  unitName: Ranger
-  unitDescription: PH
+  unitName: Digger
+  unitDescription: Mighty melee warrior. Can move around the battlefield by digging
+    through the ground.
   faction: {fileID: 11400000, guid: 7a45c81eb139c9944b53c3c36f4a1549, type: 2}
   maxHealth: 100
   maxArmor: 0
-  maxShield: 0
+  maxShield: 100
   dmgReducArmor: 1
   agentType: -334000983
   moveSpeed: 6
@@ -25,32 +26,32 @@ MonoBehaviour:
   agentPriority: 50
   startState: {fileID: 11400000, guid: e5eca4e52f6c1ba41866a3999c466074, type: 2}
   colliderRadius: 0.35
-  aggroRange: 10
+  aggroRange: 15
   ability:
-  - ability: {fileID: 11400000, guid: ed293c449266436468a86c8cd05fef7d, type: 2}
-    minRange: 2
-    maxRange: 10
-    coolDownDuration: 1
-    castLockDuration: 0.75
-    abilityUseCondition:
-      timer: 0
-      activeRadius: 10
-      minHealth: 0
-      maxHealth: 1
-    castAnimIndex: 00000000
-  - ability: {fileID: 11400000, guid: d28841fa2e85b064cb236959a1f2fe65, type: 2}
-    minRange: 0.2
+  - ability: {fileID: 11400000, guid: b0fc6e0d8c52a42448782366f880ef56, type: 2}
+    minRange: 0
     maxRange: 1
-    coolDownDuration: 10
+    coolDownDuration: 1.2
     castLockDuration: 1
     abilityUseCondition:
       timer: 0
       activeRadius: 10
       minHealth: 0
       maxHealth: 1
-    castAnimIndex: 02000000
+    castAnimIndex: 00000000
+  - ability: {fileID: 11400000, guid: 17a020fc576e33c43b5c23d96a215043, type: 2}
+    minRange: 0
+    maxRange: 12
+    coolDownDuration: 5
+    castLockDuration: 1
+    abilityUseCondition:
+      timer: 0
+      activeRadius: 10
+      minHealth: 0
+      maxHealth: 1
+    castAnimIndex: 01000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
-  spritePrefab: {fileID: 1325957962458012, guid: b1177441d2ebe3c4f9a59121fa8bb6cc,
+  spritePrefab: {fileID: 1337349738299924, guid: 923ec7e85327a69489bf12addd4b3ac8,
     type: 2}
   deathFx: {fileID: 11400000, guid: 0125c52ff73ebfa49991ca18fc3ace42, type: 2}

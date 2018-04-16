@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c38c47602f3dee742a038d5780dfee71, type: 3}
-  m_Name: SphereSearch_RangerBolt
+  m_Name: SphereSearch_SniperShot
   m_EditorClassIdentifier: 
   sphereRadius: 5
   canHitCaster: 0
