@@ -15,6 +15,8 @@ public class DialogManager : MonoBehaviour {
 	public TextMeshProUGUI tutorialText;
 	public GameObject tutorialBox;
 
+	public GameController gC;
+
 	private Player player;
 	private int activeDialog = 0;
 	private DialogAsset currentDialog;
@@ -57,12 +59,14 @@ public class DialogManager : MonoBehaviour {
 		currentDialog = dA;
 		LoadDialog (activeDialog);
 		dialogOverlay.SetActive (true);
+		gC.Pause ();
 	}
 
 	public void EndDialogEvent ()
 	{
 		dialogOverlay.SetActive (false);
 		activeDialog = 0;
+		gC.Resume ();
 	}
 
 	public void LoadDialog (int dIndex)

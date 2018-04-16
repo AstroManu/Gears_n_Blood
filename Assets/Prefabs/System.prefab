@@ -6107,9 +6107,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spritesParent: {fileID: 4382000011451844}
+  dialogManager: {fileID: 114932850502501638}
   slowUpdateDuration: 0.5
   blazeDamage: 5
   folReturnDist: 1
+  gameIsPaused: 0
 --- !u!114 &114514067538241276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8204,6 +8206,7 @@ MonoBehaviour:
   dialogText: {fileID: 114806671307928310}
   tutorialText: {fileID: 114368592458325944}
   tutorialBox: {fileID: 1668138609631310}
+  gC: {fileID: 114506567400467024}
 --- !u!114 &114939942922616712
 MonoBehaviour:
   m_ObjectHideFlags: 1
