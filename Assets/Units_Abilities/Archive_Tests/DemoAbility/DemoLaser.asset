@@ -16,15 +16,15 @@ MonoBehaviour:
   allowFriendlyFire: 1
   abilityEvents:
   - startTime: 0
-    endTime: 2
+    endTime: 5
     eventPosition: {fileID: 11400000, guid: 9020b922cd85af44ba1d6926ef933619, type: 2}
     eventRotation: {fileID: 11400000, guid: 3e0a96caf43888e44a033ebc1e077251, type: 2}
     effect:
     - {fileID: 11400000, guid: d7565bd689a672742a39901120959230, type: 2}
     eventInterrupt:
     - {fileID: 11400000, guid: 1a24b65c79030c04ca024b77ac0cc358, type: 2}
-  - startTime: 2
-    endTime: 2.5
+  - startTime: 6
+    endTime: 7
     eventPosition: {fileID: 11400000, guid: 9020b922cd85af44ba1d6926ef933619, type: 2}
     eventRotation: {fileID: 11400000, guid: 3e0a96caf43888e44a033ebc1e077251, type: 2}
     effect:

@@ -31,32 +31,10 @@ MonoBehaviour:
     minRange: 0
     maxRange: 15
     coolDownDuration: 12
-    castLockDuration: 7
+    castLockDuration: 0
     abilityUseCondition:
-      timer: 14
+      timer: 10
       activeRadius: 10
-      minHealth: 0
-      maxHealth: 1
-    castAnimIndex: 00000000
-  - ability: {fileID: 11400000, guid: 84f679c04389d6c4eadd13c4a6722b46, type: 2}
-    minRange: 0
-    maxRange: 10
-    coolDownDuration: 4
-    castLockDuration: 2.5
-    abilityUseCondition:
-      timer: 5
-      activeRadius: 7.5
-      minHealth: 0
-      maxHealth: 1
-    castAnimIndex: 00000000
-  - ability: {fileID: 11400000, guid: 1c25ef3ad4968124f9c6d6f93ea58deb, type: 2}
-    minRange: 0
-    maxRange: 20
-    coolDownDuration: 0.5
-    castLockDuration: 1
-    abilityUseCondition:
-      timer: 0
-      activeRadius: 4
       minHealth: 0
       maxHealth: 1
     castAnimIndex: 00000000
