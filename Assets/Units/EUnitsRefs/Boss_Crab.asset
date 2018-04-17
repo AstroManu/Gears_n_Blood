@@ -14,7 +14,7 @@ MonoBehaviour:
   unitName: BossCrab
   unitDescription: PH
   faction: {fileID: 11400000, guid: 600bae9a360d30647ab409b13ff2629e, type: 2}
-  maxHealth: 400
+  maxHealth: 10000
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0
@@ -30,11 +30,33 @@ MonoBehaviour:
   - ability: {fileID: 11400000, guid: e5d4398d17defd24b8f52c8f59fbd2f6, type: 2}
     minRange: 0
     maxRange: 15
-    coolDownDuration: 5
-    castLockDuration: 4
+    coolDownDuration: 12
+    castLockDuration: 7
+    abilityUseCondition:
+      timer: 14
+      activeRadius: 10
+      minHealth: 0
+      maxHealth: 1
+    castAnimIndex: 00000000
+  - ability: {fileID: 11400000, guid: 84f679c04389d6c4eadd13c4a6722b46, type: 2}
+    minRange: 0
+    maxRange: 10
+    coolDownDuration: 4
+    castLockDuration: 2.5
+    abilityUseCondition:
+      timer: 5
+      activeRadius: 7.5
+      minHealth: 0
+      maxHealth: 1
+    castAnimIndex: 00000000
+  - ability: {fileID: 11400000, guid: 1c25ef3ad4968124f9c6d6f93ea58deb, type: 2}
+    minRange: 0
+    maxRange: 20
+    coolDownDuration: 0.5
+    castLockDuration: 1
     abilityUseCondition:
       timer: 0
-      activeRadius: 10
+      activeRadius: 4
       minHealth: 0
       maxHealth: 1
     castAnimIndex: 00000000
