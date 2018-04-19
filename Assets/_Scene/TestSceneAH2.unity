@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12732561, g: 0.13415375, b: 0.12107733, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3813,76 +3813,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4960550188535616, guid: b66ddfdf6b6abaa4fbe1053acecbb964, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114806671307928310, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114806671307928310, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114625949995447090, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114625949995447090, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114454712635521204, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114454712635521204, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114368592458325944, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114368592458325944, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114191987487926724, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114191987487926724, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117442655057692, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114117442655057692, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114073880092746366, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114073880092746366, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

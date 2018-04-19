@@ -78,7 +78,7 @@ public class PlayerController : UnitController {
 			cursorTargetPosition = (new Vector3 (vX * cursorRange, 0f, vY * cursorRange));
 			CheckCursorLock ();
 
-			Time.timeScale = Mathf.Lerp (Time.timeScale, 0.1F, 0.2F);
+			//Time.timeScale = Mathf.Lerp (Time.timeScale, 0.1F, 0.2F);
 			staySnapped = false;
 		}
 		else
@@ -89,7 +89,7 @@ public class PlayerController : UnitController {
 			cursorTargetPosition = Vector3.zero;
 			float distanceToPlayer = (cursor.localPosition.x * cursor.localPosition.x) + (cursor.localPosition.y * cursor.localPosition.y);
 			lockedTarget = null;
-			Time.timeScale = Mathf.Lerp (Time.timeScale, 1F, 0.2F);
+			//Time.timeScale = Mathf.Lerp (Time.timeScale, 1F, 0.2F);
 			if (distanceToPlayer <= 0.1f)
 			{
 				staySnapped = true;
