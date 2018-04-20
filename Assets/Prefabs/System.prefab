@@ -2914,7 +2914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4091842321613094
 Transform:
   m_ObjectHideFlags: 1
@@ -3204,7 +3204,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1581092429063654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: -12}
+  m_LocalPosition: {x: 0, y: 10, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4111038831184896}
@@ -3573,7 +3573,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.07969292, g: 0.080155484, b: 0.08088237, a: 0}
+  m_BackGroundColor: {r: 0.12941177, g: 0.11764707, b: 0.10588236, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -5219,7 +5219,7 @@ MonoBehaviour:
   playerName: Player1
   unit: {fileID: 0}
   worldTarget: {x: 0, y: 0, z: 0}
-  playerSpeed: 4.5
+  playerSpeed: 6
   playerSmoothTime: 20
   squad:
   - {fileID: 114274474587722910}
@@ -8636,7 +8636,7 @@ WindZone:
   m_Mode: 0
   m_Radius: 20
   m_WindMain: 0.25
-  m_WindTurbulence: 5.3
+  m_WindTurbulence: 10
   m_WindPulseMagnitude: 0.5
   m_WindPulseFrequency: 0.01
 --- !u!195 &195014103492690996
@@ -8956,8 +8956,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.3
-      minScalar: 0.1
+      scalar: 0.2
+      minScalar: 0.05
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -23896,7 +23896,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_SortingLayerID: 257630223
   m_SortingOrder: 100
   m_TargetDisplay: 0
