@@ -11,21 +11,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713d08dfe3511ca49acbd8d84788c58c, type: 3}
   m_Name: Trenchmen
   m_EditorClassIdentifier: 
+  abilityName: New Ability
+  abilityDescription: Description
   allowFriendlyFire: 0
   abilityEvents:
   - startTime: 1
     endTime: 2
-    eventPosition: {fileID: 11400000, guid: 48d0a2f66c814e048b6500e8cfdd7396, type: 2}
+    eventPosition: {fileID: 11400000, guid: 99e3d49c0bb65904caf9a5e6fb4c804c, type: 2}
     eventRotation: {fileID: 11400000, guid: 7314d0f78b2228942b4a70db0c97ffc9, type: 2}
     effect:
-    - {fileID: 11400000, guid: 7a20e2fa318cafa459ff4c0642f9fafe, type: 2}
+    - {fileID: 11400000, guid: 6d5be6d4d68686d4585064224475bc5b, type: 2}
     eventInterrupt: []
   - startTime: 3
     endTime: 4
-    eventPosition: {fileID: 11400000, guid: 48d0a2f66c814e048b6500e8cfdd7396, type: 2}
+    eventPosition: {fileID: 11400000, guid: 99e3d49c0bb65904caf9a5e6fb4c804c, type: 2}
     eventRotation: {fileID: 11400000, guid: 7314d0f78b2228942b4a70db0c97ffc9, type: 2}
     effect:
-    - {fileID: 11400000, guid: 1d03c742543f5c344963364e84b50549, type: 2}
+    - {fileID: 11400000, guid: b61f087639f20ef4a8969694e2dd11b0, type: 2}
     - {fileID: 11400000, guid: ed3214865824be741a5b4640ad315f61, type: 2}
     - {fileID: 11400000, guid: fd247255fdd737242b0fd0d141f2bf40, type: 2}
     eventInterrupt: []
