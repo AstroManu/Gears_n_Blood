@@ -15,7 +15,7 @@ MonoBehaviour:
   unitDescription: Mighty melee warrior. Can move around the battlefield by digging
     through the ground.
   faction: {fileID: 11400000, guid: 7a45c81eb139c9944b53c3c36f4a1549, type: 2}
-  maxHealth: 100
+  maxHealth: 200
   maxArmor: 0
   maxShield: 100
   dmgReducArmor: 1
@@ -26,7 +26,7 @@ MonoBehaviour:
   agentPriority: 50
   startState: {fileID: 11400000, guid: e5eca4e52f6c1ba41866a3999c466074, type: 2}
   colliderRadius: 0.35
-  aggroRange: 15
+  aggroRange: 10
   ability:
   - ability: {fileID: 11400000, guid: b0fc6e0d8c52a42448782366f880ef56, type: 2}
     minRange: 0

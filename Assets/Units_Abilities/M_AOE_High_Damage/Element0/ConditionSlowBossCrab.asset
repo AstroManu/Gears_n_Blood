@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: ConditionSlowBossCrab
   m_EditorClassIdentifier: 
   slowDuration: 20
-  speedModifier: -1500
+  speedModifier: 1e+10

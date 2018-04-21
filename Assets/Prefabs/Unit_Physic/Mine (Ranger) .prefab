@@ -78,6 +78,7 @@ MonoBehaviour:
   playerName: System
   unit: {fileID: 0}
   worldTarget: {x: 0, y: 0, z: 0}
+  abilityTimers: []
 --- !u!114 &114649114291323602
 MonoBehaviour:
   m_ObjectHideFlags: 1

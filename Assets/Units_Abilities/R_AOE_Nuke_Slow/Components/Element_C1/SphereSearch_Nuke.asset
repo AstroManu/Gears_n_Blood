@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38c47602f3dee742a038d5780dfee71, type: 3}
   m_Name: SphereSearch_Nuke
   m_EditorClassIdentifier: 
-  sphereRadius: 6.5
+  sphereRadius: 3.9
   canHitCaster: 0

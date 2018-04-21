@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Instantiate_Telegraph_RangeAttack_CAC
   m_EditorClassIdentifier: 
   prefab: {fileID: 1533227337975888, guid: 58144ec81b964eb438bbd49aad433cd7, type: 2}
-  offset: {x: 0, y: 0, z: 0.5}
+  offset: {x: 0, y: 0, z: 0}

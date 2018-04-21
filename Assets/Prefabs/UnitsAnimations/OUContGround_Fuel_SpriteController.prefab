@@ -258,11 +258,12 @@ MonoBehaviour:
   coloredSprite: []
   idleOverriden: 0
   moveRight: 1
+  shotSpawn: {fileID: 0}
   blazeFx: {fileID: 198808441603672734}
   healthBarsPrefab: {fileID: 1547069487813742, guid: 1e3b8b5d38a825c42b4d0ce096919172,
     type: 2}
   HealthUI: {fileID: 0}
-  healthBarsOffset: {x: 0, y: 0, z: 1.8}
+  healthBarsOffset: {x: 0.5, y: 0, z: 2.3}
   rangeDisplay: {fileID: 114797949964143630}
 --- !u!114 &114797949964143630
 MonoBehaviour:

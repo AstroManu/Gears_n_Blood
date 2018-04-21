@@ -14,7 +14,7 @@ MonoBehaviour:
   unitName: Ranger
   unitDescription: PH
   faction: {fileID: 11400000, guid: 7a45c81eb139c9944b53c3c36f4a1549, type: 2}
-  maxHealth: 200
+  maxHealth: 275
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 1
@@ -41,7 +41,7 @@ MonoBehaviour:
   - ability: {fileID: 11400000, guid: d28841fa2e85b064cb236959a1f2fe65, type: 2}
     minRange: 0.2
     maxRange: 1
-    coolDownDuration: 10
+    coolDownDuration: 5
     castLockDuration: 1
     abilityUseCondition:
       timer: 0

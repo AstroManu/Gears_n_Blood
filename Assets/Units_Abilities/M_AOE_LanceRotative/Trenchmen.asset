@@ -21,7 +21,8 @@ MonoBehaviour:
     eventRotation: {fileID: 11400000, guid: 7314d0f78b2228942b4a70db0c97ffc9, type: 2}
     effect:
     - {fileID: 11400000, guid: 6d5be6d4d68686d4585064224475bc5b, type: 2}
-    eventInterrupt: []
+    eventInterrupt:
+    - {fileID: 11400000, guid: 1a24b65c79030c04ca024b77ac0cc358, type: 2}
   - startTime: 3
     endTime: 4
     eventPosition: {fileID: 11400000, guid: 99e3d49c0bb65904caf9a5e6fb4c804c, type: 2}
@@ -30,4 +31,5 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b61f087639f20ef4a8969694e2dd11b0, type: 2}
     - {fileID: 11400000, guid: ed3214865824be741a5b4640ad315f61, type: 2}
     - {fileID: 11400000, guid: fd247255fdd737242b0fd0d141f2bf40, type: 2}
-    eventInterrupt: []
+    eventInterrupt:
+    - {fileID: 11400000, guid: 1a24b65c79030c04ca024b77ac0cc358, type: 2}

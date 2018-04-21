@@ -25,7 +25,7 @@ MonoBehaviour:
   agentPriority: 50
   startState: {fileID: 11400000, guid: e5eca4e52f6c1ba41866a3999c466074, type: 2}
   colliderRadius: 0.6
-  aggroRange: 15
+  aggroRange: 8
   ability:
   - ability: {fileID: 11400000, guid: e008b452d7ea04d8cb475c76a1a89cff, type: 2}
     minRange: 0

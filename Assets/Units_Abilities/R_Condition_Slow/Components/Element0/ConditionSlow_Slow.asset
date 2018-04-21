@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef5c26b641f77094da652f51a1bbcdad, type: 3}
   m_Name: ConditionSlow_Slow
   m_EditorClassIdentifier: 
-  slowDuration: 10
+  slowDuration: 3
   speedModifier: -1
