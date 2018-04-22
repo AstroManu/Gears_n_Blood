@@ -79,7 +79,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1022191063292384
 GameObject:
   m_ObjectHideFlags: 1
@@ -3629,7 +3629,7 @@ Animator:
   m_GameObject: {fileID: 1487734716271238}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5e2eaf15af12c6e47aa7a6da0707f8ea, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3895,7 +3895,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 22a0cce1891f74c829f43b3097ae48d3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5753,6 +5753,13 @@ MonoBehaviour:
   blazeDamage: 5
   folReturnDist: 1
   gameIsPaused: 0
+  gameEnded: 0
+  endScreen: {fileID: 0}
+  endScreenFadeSpeed: 1
+  endDisplay: {fileID: 0}
+  endCaption: {fileID: 0}
+  victoryTextColor: {r: 0, g: 0, b: 1, a: 1}
+  defeatTextColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &114514067538241276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7988,7 +7995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: Player1
   dialogOverlay: {fileID: 1010805630262426}
-  portraitRef: {fileID: 114115286173228596}
+  portraitRef: {fileID: 95618520852095254}
   nameText: {fileID: 114285204921119866}
   dialogText: {fileID: 114632170439986102}
   tutorialText: {fileID: 114918803925416976}

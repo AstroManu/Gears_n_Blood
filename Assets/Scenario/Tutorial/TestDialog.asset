@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogEvents:
   - nameTag: Ranger
-    portrait: {fileID: 9100000, guid: 5e2eaf15af12c6e47aa7a6da0707f8ea, type: 2}
+    portrait: {fileID: 9100000, guid: 8e928d410b336574d9cac7c933f696ad, type: 2}
     dialogText: Commander! Thank heaven you're still alive... I'd almost given up
       hope.
     tutorialText: Press the Right Trigger [R1] button on your gamepad to continue.
@@ -23,7 +23,7 @@ MonoBehaviour:
       and drive these machines from our homes.
     tutorialText: 
   - nameTag: Ranger
-    portrait: {fileID: 9100000, guid: 5e2eaf15af12c6e47aa7a6da0707f8ea, type: 2}
+    portrait: {fileID: 9100000, guid: 8e928d410b336574d9cac7c933f696ad, type: 2}
     dialogText: We need to get back into the fight! Give the word and I'll be right
       behind you.
     tutorialText: Order the Ranger to follow you by pressing [A]
