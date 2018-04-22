@@ -596,7 +596,7 @@ MonoBehaviour:
   sceneToLoad: ScenarioTutorial_5Boss
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
   unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
+  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
 --- !u!1 &483941532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   sceneToLoad: 
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
   unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
+  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
 --- !u!1 &593983386
 GameObject:
   m_ObjectHideFlags: 0
@@ -4031,8 +4031,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278221311
-  m_fontColor: {r: 1, g: 0.47586206, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -4207,7 +4207,7 @@ MonoBehaviour:
   sceneToLoad: ScenarioTutorial_1Ranger
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
   unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
+  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
 --- !u!1 &1243236105
 GameObject:
   m_ObjectHideFlags: 0
@@ -5041,7 +5041,7 @@ MonoBehaviour:
   sceneToLoad: ScenarioTutorial_3Sniper
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
   unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
+  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
 --- !u!1 &1689634135
 GameObject:
   m_ObjectHideFlags: 0
@@ -5281,7 +5281,7 @@ MonoBehaviour:
   sceneToLoad: ScenarioTutorial_4Digger
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
   unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
+  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
 --- !u!1 &1858144145
 GameObject:
   m_ObjectHideFlags: 0
@@ -5502,4 +5502,4 @@ MonoBehaviour:
   sceneToLoad: ScenarioTutorial_2Flamer
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
   unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
+  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
