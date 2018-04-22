@@ -12,10 +12,10 @@ public class TC_UnitNullCheck : TriggerCheck {
 		{
 			if (unit != null)
 			{
-				return true;
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 
 }

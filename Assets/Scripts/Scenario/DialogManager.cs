@@ -9,7 +9,7 @@ public class DialogManager : MonoBehaviour {
 
 	public string playerName = "Player1";
 	public GameObject dialogOverlay;
-	public Image portraitRef;
+	public Animator portraitRef;
 	public TextMeshProUGUI nameText;
 	public TextMeshProUGUI dialogText;
 	public TextMeshProUGUI tutorialText;
@@ -72,7 +72,7 @@ public class DialogManager : MonoBehaviour {
 	public void LoadDialog (int dIndex)
 	{
 		nameText.text = currentDialog.dialogEvents [dIndex].nameTag;
-		portraitRef.sprite = currentDialog.dialogEvents [dIndex].portrait;
+		portraitRef.runtimeAnimatorController = currentDialog.dialogEvents [dIndex].portrait;
 		dialogText.text = currentDialog.dialogEvents [dIndex].dialogText;
 		tutorialText.text = currentDialog.dialogEvents [dIndex].tutorialText;
 		tutorialBox.SetActive (currentDialog.dialogEvents [dIndex].tutorialText.Length > 0);

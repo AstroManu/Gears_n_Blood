@@ -51,6 +51,7 @@ public class GameController : MonoBehaviour {
 		endDisplay.text = "Victory";
 		endDisplay.color = victoryTextColor;
 		endCaption.text = victoryDefinition.displayMessage;
+		endScreen.gameObject.SetActive (true);
 	}
 
 	public void Defeat (WinLostDefinition defeatDefinition)
@@ -59,6 +60,7 @@ public class GameController : MonoBehaviour {
 		endDisplay.text = "Defeat";
 		endDisplay.color = defeatTextColor;
 		endCaption.text = defeatDefinition.displayMessage;
+		endScreen.gameObject.SetActive (true);
 	}
 
 	public void Resume ()

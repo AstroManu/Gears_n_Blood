@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DialogEvent
 {
 	public string nameTag;
-	public Sprite portrait;
+	public RuntimeAnimatorController portrait;
 	[TextArea (3, 7)] public string dialogText;
 	[TextArea (2, 4)] public string tutorialText;
 }
