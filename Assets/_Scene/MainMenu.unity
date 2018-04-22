@@ -140,6 +140,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551860f78d34ebf4287076dbb1747a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerName: Player1
+  buttons:
+  - {fileID: 1076765720}
+  - {fileID: 2096543480}
+  - {fileID: 1609529883}
+  - {fileID: 1732830435}
+  - {fileID: 412912912}
+  - {fileID: 593689066}
+  currentSelect: 0
 --- !u!4 &92197160
 Transform:
   m_ObjectHideFlags: 0
@@ -511,6 +520,7 @@ GameObject:
   - component: {fileID: 412912909}
   - component: {fileID: 412912911}
   - component: {fileID: 412912910}
+  - component: {fileID: 412912912}
   m_Layer: 5
   m_Name: Scenario5Boss
   m_TagString: Untagged
@@ -571,6 +581,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 412912908}
+--- !u!114 &412912912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412912908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd838ddb3c13dc47934f3275893779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitGame: 0
+  sceneToLoad: ScenarioTutorial_5Boss
+  selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &483941532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1080,7 @@ GameObject:
   - component: {fileID: 593689063}
   - component: {fileID: 593689065}
   - component: {fileID: 593689064}
+  - component: {fileID: 593689066}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -1113,6 +1140,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 593689062}
+--- !u!114 &593689066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 593689062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd838ddb3c13dc47934f3275893779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitGame: 1
+  sceneToLoad: 
+  selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &593983386
 GameObject:
   m_ObjectHideFlags: 0
@@ -4088,6 +4131,7 @@ GameObject:
   - component: {fileID: 1076765717}
   - component: {fileID: 1076765719}
   - component: {fileID: 1076765718}
+  - component: {fileID: 1076765720}
   m_Layer: 5
   m_Name: Scenario1Ranger
   m_TagString: Untagged
@@ -4148,6 +4192,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1076765716}
+--- !u!114 &1076765720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1076765716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd838ddb3c13dc47934f3275893779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitGame: 0
+  sceneToLoad: ScenarioTutorial_1Ranger
+  selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &1243236105
 GameObject:
   m_ObjectHideFlags: 0
@@ -4905,6 +4965,7 @@ GameObject:
   - component: {fileID: 1609529880}
   - component: {fileID: 1609529882}
   - component: {fileID: 1609529881}
+  - component: {fileID: 1609529883}
   m_Layer: 5
   m_Name: Scenario3Sniper
   m_TagString: Untagged
@@ -4965,6 +5026,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609529879}
+--- !u!114 &1609529883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609529879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd838ddb3c13dc47934f3275893779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitGame: 0
+  sceneToLoad: ScenarioTutorial_3Sniper
+  selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &1689634135
 GameObject:
   m_ObjectHideFlags: 0
@@ -5128,6 +5205,7 @@ GameObject:
   - component: {fileID: 1732830432}
   - component: {fileID: 1732830434}
   - component: {fileID: 1732830433}
+  - component: {fileID: 1732830435}
   m_Layer: 5
   m_Name: Scenario4Digger
   m_TagString: Untagged
@@ -5188,6 +5266,22 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732830431}
+--- !u!114 &1732830435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1732830431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd838ddb3c13dc47934f3275893779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitGame: 0
+  sceneToLoad: ScenarioTutorial_4Digger
+  selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &1858144145
 GameObject:
   m_ObjectHideFlags: 0
@@ -5332,6 +5426,7 @@ GameObject:
   - component: {fileID: 2096543477}
   - component: {fileID: 2096543479}
   - component: {fileID: 2096543478}
+  - component: {fileID: 2096543480}
   m_Layer: 5
   m_Name: Scenario2Flamer
   m_TagString: Untagged
@@ -5392,3 +5487,19 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2096543476}
+--- !u!114 &2096543480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096543476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dd838ddb3c13dc47934f3275893779b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quitGame: 0
+  sceneToLoad: ScenarioTutorial_2Flamer
+  selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
