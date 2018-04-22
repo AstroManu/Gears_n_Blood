@@ -14,7 +14,7 @@ MonoBehaviour:
   unitName: TestHostile
   unitDescription: PH
   faction: {fileID: 11400000, guid: 600bae9a360d30647ab409b13ff2629e, type: 2}
-  maxHealth: 3000
+  maxHealth: 4000
   maxArmor: 0
   maxShield: 0
   dmgReducArmor: 0
