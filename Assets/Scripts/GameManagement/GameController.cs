@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour {
 
@@ -21,6 +23,15 @@ public class GameController : MonoBehaviour {
 
 	[HideInInspector] public bool gameIsPaused = false;
 
+	//End Game
+	[HideInInspector] public bool gameEnded = false;
+	public CanvasGroup endScreen;
+	public float endScreenFadeSpeed = 1f;
+	public TextMeshProUGUI endDisplay;
+	public TextMeshProUGUI endCaption;
+	public Color victoryTextColor = Color.blue;
+	public Color defeatTextColor = Color.red;
+
 	void Awake ()
 	{
 		StaticRef.gameControllerRef = gameObject;
@@ -28,7 +39,26 @@ public class GameController : MonoBehaviour {
 
 	void Update ()
 	{
-		
+		if (gameEnded)
+		{
+			endScreen.alpha = Mathf.Clamp01 (endScreen.alpha + (endScreenFadeSpeed * Time.deltaTime));
+		}
+	}
+
+	public void Victory (WinLostDefinition victoryDefinition)
+	{
+		gameEnded = true;
+		endDisplay.text = "Victory";
+		endDisplay.color = victoryTextColor;
+		endCaption.text = victoryDefinition.displayMessage;
+	}
+
+	public void Defeat (WinLostDefinition defeatDefinition)
+	{
+		gameEnded = true;
+		endDisplay.text = "Defeat";
+		endDisplay.color = defeatTextColor;
+		endCaption.text = defeatDefinition.displayMessage;
 	}
 
 	public void Resume ()
