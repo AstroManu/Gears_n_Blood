@@ -1682,8 +1682,9 @@ GameObject:
   - component: {fileID: 4667919086392272}
   - component: {fileID: 20304171652809068}
   - component: {fileID: 124978513112747832}
-  - component: {fileID: 81648672584871636}
   - component: {fileID: 114703021678277732}
+  - component: {fileID: 114745422455581748}
+  - component: {fileID: 114865234361107924}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3600,13 +3601,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &81648672584871636
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1562137480122540}
-  m_Enabled: 1
 --- !u!95 &95067437721151020
 Animator:
   serializedVersion: 3
@@ -7118,6 +7112,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114745422455581748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562137480122540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f0f0098dc36c754d80784f21094bd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!114 &114746111208746510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7784,6 +7791,27 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114865234361107924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1562137480122540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabfc91a2d33c9b428379708ab8b4d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &114869400241286158
 MonoBehaviour:
   m_ObjectHideFlags: 1

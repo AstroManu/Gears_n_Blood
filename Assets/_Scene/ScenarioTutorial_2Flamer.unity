@@ -119400,49 +119400,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 81648672584871636, guid: b66ddfdf6b6abaa4fbe1053acecbb964, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b66ddfdf6b6abaa4fbe1053acecbb964, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1876014520 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1562137480122540, guid: b66ddfdf6b6abaa4fbe1053acecbb964,
-    type: 2}
-  m_PrefabInternal: {fileID: 1876014519}
---- !u!114 &1876014521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876014520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f0f0098dc36c754d80784f21094bd76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
---- !u!114 &1876014522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1876014520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cabfc91a2d33c9b428379708ab8b4d74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &1961888018
 GameObject:
   m_ObjectHideFlags: 0
