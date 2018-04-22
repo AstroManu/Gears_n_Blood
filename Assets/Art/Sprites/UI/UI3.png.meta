@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2263b508af0477542a9f219e8d387d4d
-timeCreated: 1524420001
+guid: 049a51b65947b1843bcfb5cd3b2c2a80
+timeCreated: 1524426049
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -98,7 +98,21 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI3_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
