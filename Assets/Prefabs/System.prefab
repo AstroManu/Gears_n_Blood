@@ -5847,6 +5847,7 @@ MonoBehaviour:
   blazeDamage: 5
   folReturnDist: 1
   gameIsPaused: 0
+  playerName: Player1
   gameEnded: 0
   endScreen: {fileID: 225004778419546104}
   endScreenFadeSpeed: 1
@@ -5854,6 +5855,8 @@ MonoBehaviour:
   endCaption: {fileID: 114629145690933976}
   victoryTextColor: {r: 0, g: 0, b: 1, a: 1}
   defeatTextColor: {r: 1, g: 0, b: 0, a: 1}
+  quitScene: MainMenu
+  nextScene: 
 --- !u!114 &114514067538241276
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Rewired;
 using TMPro;
 
 public class GameController : MonoBehaviour {
@@ -23,6 +25,9 @@ public class GameController : MonoBehaviour {
 
 	[HideInInspector] public bool gameIsPaused = false;
 
+	public string playerName = "Player1";
+	private Player player;
+
 	//End Game
 	[HideInInspector] public bool gameEnded = false;
 	public CanvasGroup endScreen;
@@ -32,9 +37,14 @@ public class GameController : MonoBehaviour {
 	public Color victoryTextColor = Color.blue;
 	public Color defeatTextColor = Color.red;
 
+	//Scene Change
+	public string quitScene = "MainMenu";
+	public string nextScene = "MainMenu";
+
 	void Awake ()
 	{
 		StaticRef.gameControllerRef = gameObject;
+		player = ReInput.players.GetPlayer (playerName);
 	}
 
 	void Update ()
@@ -42,6 +52,19 @@ public class GameController : MonoBehaviour {
 		if (gameEnded)
 		{
 			endScreen.alpha = Mathf.Clamp01 (endScreen.alpha + (endScreenFadeSpeed * Time.deltaTime));
+			if (player.GetButtonDown ("Start"))
+			{
+				SceneManager.LoadScene (nextScene);
+			}
+			if (player.GetButtonDown ("Select"))
+			{
+				SceneManager.LoadScene (quitScene);
+			}
+		}
+
+		if (player.GetButtonLongPressDown("Select"))
+		{
+			SceneManager.LoadScene (quitScene);
 		}
 	}
 
