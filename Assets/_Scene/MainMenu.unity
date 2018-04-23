@@ -567,7 +567,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -595,8 +595,8 @@ MonoBehaviour:
   quitGame: 0
   sceneToLoad: ScenarioTutorial_5Boss
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
-  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &483941532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,7 +1126,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1154,8 +1154,8 @@ MonoBehaviour:
   quitGame: 1
   sceneToLoad: 
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
-  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &593983386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2659,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2687,8 +2687,8 @@ MonoBehaviour:
   quitGame: 0
   sceneToLoad: ScenarioTutorial_1Ranger
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
-  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &1243236105
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,7 +5043,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5071,8 +5071,8 @@ MonoBehaviour:
   quitGame: 0
   sceneToLoad: ScenarioTutorial_3Sniper
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
-  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &1689634135
 GameObject:
   m_ObjectHideFlags: 0
@@ -5283,7 +5283,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5311,8 +5311,8 @@ MonoBehaviour:
   quitGame: 0
   sceneToLoad: ScenarioTutorial_4Digger
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
-  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}
 --- !u!1 &1858144145
 GameObject:
   m_ObjectHideFlags: 0
@@ -5504,7 +5504,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5532,5 +5532,5 @@ MonoBehaviour:
   quitGame: 0
   sceneToLoad: ScenarioTutorial_2Flamer
   selectedSprite: {fileID: 21300000, guid: 90e4207a8577133408f548be8e2bfee8, type: 3}
-  unselectedSprite: {fileID: 21300000, guid: e4120e9c1ca8cdd449cf58b010ccb968, type: 3}
-  activatedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: c22e014b769fee2419d757cc49e998af, type: 3}
+  activatedSprite: {fileID: 21300000, guid: 4b0edb23924170343be1b3f7c62d337d, type: 3}

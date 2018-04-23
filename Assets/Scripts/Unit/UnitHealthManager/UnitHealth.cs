@@ -15,6 +15,11 @@ public abstract class UnitHealth : MonoBehaviour {
 
 	public abstract void InitializeHealth ();
 
+	void Update ()
+	{
+		ShieldRestoration ();
+	}
+
 	public void Damage (float amount, GameUnit source)
 	{
 		DoDamage (amount);
@@ -61,6 +66,15 @@ public abstract class UnitHealth : MonoBehaviour {
 
 		//Damage on Health
 		health -= damage;
+	}
+
+	private void ShieldRestoration ()
+	{
+		if (shield < maxShield)
+		{
+			shield = Mathf.Clamp (shield + (5f * Time.deltaTime), 0f, maxShield);
+			UpdateDisplay ();
+		}
 	}
 
 	public abstract void DestroyUnit ();
