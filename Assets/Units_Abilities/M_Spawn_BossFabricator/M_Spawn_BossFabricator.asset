@@ -11,12 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713d08dfe3511ca49acbd8d84788c58c, type: 3}
   m_Name: M_Spawn_BossFabricator
   m_EditorClassIdentifier: 
-  abilityName: New Ability
-  abilityDescription: Description
+  abilityName: Drone Fabrication
+  abilityDescription: Overwhelm foes by creating drones.
   allowFriendlyFire: 0
   abilityEvents:
-  - startTime: 3
-    endTime: 4
+  - startTime: 1
+    endTime: 1.5
     eventPosition: {fileID: 11400000, guid: 9551de3f3a77c0947964816968160dd1, type: 2}
     eventRotation: {fileID: 11400000, guid: 7314d0f78b2228942b4a70db0c97ffc9, type: 2}
     effect:

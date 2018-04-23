@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0ad25e2f3f49b4fbe740e948025cd7, type: 3}
   m_Name: InstantiateUnbound_BossFabricator_Minion
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1957956025014530, guid: 69041960e0398e24b9c58d1e7502a6bd, type: 2}
+  prefab: {fileID: 1208945783679638, guid: 537900be46fcff041a531052e7164297, type: 2}
   offset: {x: 0, y: 0, z: 0}

@@ -29,15 +29,15 @@ MonoBehaviour:
   ability:
   - ability: {fileID: 11400000, guid: 1c25ef3ad4968124f9c6d6f93ea58deb, type: 2}
     minRange: 0
-    maxRange: 15
-    coolDownDuration: 0.8
-    castLockDuration: 0.8
+    maxRange: 13
+    coolDownDuration: 1.1
+    castLockDuration: 1
     abilityUseCondition:
       timer: 6
       activeRadius: 10
       minHealth: 0
       maxHealth: 1
-    castAnimIndex: 00000000
+    castAnimIndex: 01000000
   hitAreaCenter: {x: 0, y: 0, z: 1}
   hitAreaRadius: 0.5
   spritePrefab: {fileID: 1721264696680672, guid: 41efe5a02bb7b43c9985f06824761058,

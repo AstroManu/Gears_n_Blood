@@ -14,10 +14,10 @@ MonoBehaviour:
   unitName: Flamethrower
   unitDescription: Heavy trooper with powerful flametrower
   faction: {fileID: 11400000, guid: 7a45c81eb139c9944b53c3c36f4a1549, type: 2}
-  maxHealth: 350
-  maxArmor: 0
+  maxHealth: 200
+  maxArmor: 200
   maxShield: 0
-  dmgReducArmor: 1
+  dmgReducArmor: 3
   agentType: 1479372276
   moveSpeed: 6.5
   moveAccelaration: 50
@@ -42,7 +42,7 @@ MonoBehaviour:
     minRange: 0
     maxRange: 10
     coolDownDuration: 5
-    castLockDuration: 2
+    castLockDuration: 1
     abilityUseCondition:
       timer: 0
       activeRadius: 10

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: DistanceTowardTarget_Drone_fabricator
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 0, z: 0}
-  distance: 3
+  distance: 4

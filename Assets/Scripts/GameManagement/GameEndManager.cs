@@ -30,12 +30,12 @@ public class GameEndManager : MonoBehaviour {
 		{
 			foreach (TriggerCheck winCheck in victory.endCondition)
 			{
-				bool winAchieved = true;
+				int winAchieved = 0;
 				if (!winCheck.DoCheck ())
 				{
-					winAchieved = false;
+					winAchieved++;
 				}
-				if (winAchieved)
+				if (winAchieved >= victory.endCondition.Length)
 				{
 					gC.Victory (victory);
 					return;

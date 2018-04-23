@@ -72,6 +72,7 @@ public class DialogManager : MonoBehaviour {
 	public void LoadDialog (int dIndex)
 	{
 		nameText.text = currentDialog.dialogEvents [dIndex].nameTag;
+		nameText.color = currentDialog.dialogEvents [dIndex].nameColor;
 		portraitRef.runtimeAnimatorController = currentDialog.dialogEvents [dIndex].portrait;
 		dialogText.text = currentDialog.dialogEvents [dIndex].dialogText;
 		tutorialText.text = currentDialog.dialogEvents [dIndex].tutorialText;
